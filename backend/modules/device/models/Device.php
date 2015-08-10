@@ -9,7 +9,6 @@ use Yii;
 /**
  * This is the model class for table "device_device".
  * @property integer $id
- * @property integer $device_product_id
  * @property string $type
  * @property string $name
  * @property string $description
@@ -40,8 +39,7 @@ class Device extends \backend\db\Model
     public function rules()
     {
         return [
-            [['device_product_id', 'type'], 'required'],
-            [['device_product_id'], 'integer'],
+            [['type'], 'required'],
             [['name', 'description', 'short_description', 'characters'], 'string'],
             [['weight', 'width', 'height', 'depth', 'price'], 'number'],
             [['type', 'note'], 'string', 'max' => 25]
@@ -55,7 +53,6 @@ class Device extends \backend\db\Model
     {
         return [
             'id' => 'ID',
-            'device_product_id' => 'Product ID',
             'type' => 'Type',
             'name' => 'Name',
             'description' => 'Description',
@@ -73,9 +70,13 @@ class Device extends \backend\db\Model
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getProduct()
+    public function getProducts()
     {
-        return $this->hasOne(Product::className(), ['id' => 'device_product_id']);
+        return $this->hasMany(Product::className(), ['id' => 'product_id'])->viaTable(
+            'device_product',
+            ['device_id' => 'id']
+        );
+//        return $this->hasOne(Product::className(), ['id' => 'device_product_id']);
     }
 
     public function getContents()

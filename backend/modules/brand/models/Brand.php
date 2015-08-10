@@ -59,7 +59,11 @@ class Brand extends \backend\db\Model
      */
     public function getProducts()
     {
-        return $this->hasMany(Product::className(), ['brand_id' => 'id']);
+        return $this->hasMany(Product::className(), ['id' => 'product_id'])->viaTable(
+            'brand_product',
+            ['brand_id' => 'id']
+        );
+
     }
 
     /**

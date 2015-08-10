@@ -9,7 +9,6 @@ use Yii;
 /**
  * This is the model class for table "product_product".
  * @property integer $id
- * @property integer $brand_id
  * @property string $product
  * @property string $short_description
  * @property string $description
@@ -32,8 +31,7 @@ class Product extends \backend\db\Model
     public function rules()
     {
         return [
-            [['brand_id', 'product', 'short_description', 'description'], 'required'],
-            [['brand_id'], 'integer'],
+            [['product', 'short_description', 'description'], 'required'],
             [['params', 'short_description', 'description'], 'string'],
             [['product'], 'string', 'max' => 25]
         ];
@@ -46,7 +44,6 @@ class Product extends \backend\db\Model
     {
         return [
             'id' => 'ID',
-            'brand_id' => 'Brand ID',
             'product' => 'Product',
             'short_description' => 'Short Description',
             'description' => 'Description',
@@ -57,9 +54,13 @@ class Product extends \backend\db\Model
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getBrand()
+    public function getBrands()
     {
-        return $this->hasOne(Brand::className(), ['id' => 'brand_id']);
+        return $this->hasMany(Brand::className(), ['id' => 'brand_id'])->viaTable(
+            'brand_product',
+            ['product_id' => 'id']
+        );
+//        return $this->hasOne(Brand::className(), ['id' => 'brand_id']);
     }
 
     /**
@@ -67,7 +68,11 @@ class Product extends \backend\db\Model
      */
     public function getDevices()
     {
-        return $this->hasMany(Device::className(), ['product_id' => 'id']);
+        return $this->hasMany(Brand::className(), ['id' => 'device_id'])->viaTable(
+            'device_product',
+            ['product_id' => 'id']
+        );
+//        return $this->hasMany(Device::className(), ['product_id' => 'id']);
     }
 
     public function defaultExpand()
