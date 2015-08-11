@@ -13,6 +13,7 @@ use Yii;
  * @property integer $id
  * @property integer $device_brand_id
  * @property integer $device_category_id
+ * @property integer $device_product_id
  * @property string $type
  * @property string $name
  * @property string $description
@@ -24,8 +25,9 @@ use Yii;
  * @property string $price
  * @property string $note
  * @property string $characters
- * @property Brand $Brand
- * @property Category $category
+ * @property Brand $brand
+ * @property Category $categoryId
+ * @property Product $product
  * @property Content[] $contents
  * @property Product[] $deviceProducts
  */
@@ -45,7 +47,7 @@ class Device extends \backend\db\Model
     public function rules()
     {
         return [
-            [['device_brand_id', 'device_category_id'], 'integer'],
+            [['device_brand_id', 'device_category_id', 'device_product_id'], 'integer'],
             [['type'], 'required'],
             [['name', 'description', 'short_description', 'characters'], 'string'],
             [['weight', 'width', 'height', 'depth', 'price'], 'number'],
@@ -62,6 +64,7 @@ class Device extends \backend\db\Model
             'id' => 'ID',
             'device_brand_id' => 'Device Brand ID',
             'device_category_id' => 'Device Category ID',
+            'device_product_id' => 'Device Product Id',
             'type' => 'Type',
             'name' => 'Name',
             'description' => 'Description',
@@ -88,10 +91,19 @@ class Device extends \backend\db\Model
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getCategory()
+    public function getCategoryId()
     {
         return $this->hasOne(Category::className(), ['id' => 'device_category_id']);
     }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProduct()
+    {
+        return $this->hasOne(Product::className(), ['id' => 'device_product_id']);
+    }
+
 
     /**
      * @return \yii\db\ActiveQuery
@@ -108,5 +120,11 @@ class Device extends \backend\db\Model
     public function getContents()
     {
         return $this->hasMany(Content::className(), ['device_id' => 'id']);
+    }
+
+    public function defaultExpand()
+    {
+        return ['brand', 'categoryId', 'product'];
+
     }
 }

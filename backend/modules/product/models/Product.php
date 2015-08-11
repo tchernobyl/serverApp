@@ -14,6 +14,7 @@ use backend\modules\device\models\Device;
  * @property string $short_description
  * @property string $description
  * @property string $params
+ * @property string $name
  * @property Content[] $contents
  */
 class Product extends \backend\db\Model
@@ -32,9 +33,9 @@ class Product extends \backend\db\Model
     public function rules()
     {
         return [
-            [['product', 'short_description', 'description'], 'required'],
+            [['product', 'short_description', 'description', 'name'], 'required'],
             [['short_description', 'description', 'params'], 'string'],
-            [['product'], 'string', 'max' => 25]
+            [['product', 'name'], 'string', 'max' => 25]
         ];
     }
 
@@ -49,6 +50,7 @@ class Product extends \backend\db\Model
             'short_description' => 'Short Description',
             'description' => 'Description',
             'params' => 'Params',
+            'name' => 'Name',
         ];
     }
 
