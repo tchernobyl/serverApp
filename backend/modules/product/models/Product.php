@@ -2,9 +2,10 @@
 
 namespace backend\modules\product\models;
 
+use backend\modules\content\models\Content;
+use Yii;
 use backend\modules\brand\models\Brand;
 use backend\modules\device\models\Device;
-use Yii;
 
 /**
  * This is the model class for table "product_product".
@@ -13,7 +14,7 @@ use Yii;
  * @property string $short_description
  * @property string $description
  * @property string $params
- * @property Brand $brand
+ * @property Content[] $contents
  */
 class Product extends \backend\db\Model
 {
@@ -32,7 +33,7 @@ class Product extends \backend\db\Model
     {
         return [
             [['product', 'short_description', 'description'], 'required'],
-            [['params', 'short_description', 'description'], 'string'],
+            [['short_description', 'description', 'params'], 'string'],
             [['product'], 'string', 'max' => 25]
         ];
     }
@@ -51,6 +52,15 @@ class Product extends \backend\db\Model
         ];
     }
 
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getContents()
+    {
+        return $this->hasMany(Content::className(), ['product_id' => 'id']);
+    }
+
     /**
      * @return \yii\db\ActiveQuery
      */
@@ -60,7 +70,7 @@ class Product extends \backend\db\Model
             'brand_product',
             ['product_id' => 'id']
         );
-//        return $this->hasOne(Brand::className(), ['id' => 'brand_id']);
+
     }
 
     /**
@@ -72,13 +82,5 @@ class Product extends \backend\db\Model
             'device_product',
             ['product_id' => 'id']
         );
-//        return $this->hasMany(Device::className(), ['product_id' => 'id']);
-    }
-
-    public function defaultExpand()
-    {
-        return [
-//            'brand'
-        ];
     }
 }

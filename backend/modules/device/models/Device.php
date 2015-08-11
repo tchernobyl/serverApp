@@ -2,6 +2,8 @@
 
 namespace backend\modules\device\models;
 
+use backend\modules\brand\models\Brand;
+use backend\modules\category\models\Category;
 use backend\modules\content\models\Content;
 use backend\modules\product\models\Product;
 use Yii;
@@ -9,6 +11,8 @@ use Yii;
 /**
  * This is the model class for table "device_device".
  * @property integer $id
+ * @property integer $device_brand_id
+ * @property integer $device_category_id
  * @property string $type
  * @property string $name
  * @property string $description
@@ -20,8 +24,10 @@ use Yii;
  * @property string $price
  * @property string $note
  * @property string $characters
- * @property Content $contents
- * @property Product $product
+ * @property Brand $Brand
+ * @property Category $category
+ * @property Content[] $contents
+ * @property Product[] $deviceProducts
  */
 class Device extends \backend\db\Model
 {
@@ -39,6 +45,7 @@ class Device extends \backend\db\Model
     public function rules()
     {
         return [
+            [['device_brand_id', 'device_category_id'], 'integer'],
             [['type'], 'required'],
             [['name', 'description', 'short_description', 'characters'], 'string'],
             [['weight', 'width', 'height', 'depth', 'price'], 'number'],
@@ -53,6 +60,8 @@ class Device extends \backend\db\Model
     {
         return [
             'id' => 'ID',
+            'device_brand_id' => 'Device Brand ID',
+            'device_category_id' => 'Device Category ID',
             'type' => 'Type',
             'name' => 'Name',
             'description' => 'Description',
@@ -65,6 +74,23 @@ class Device extends \backend\db\Model
             'note' => 'Note',
             'characters' => 'Characters',
         ];
+    }
+
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getBrand()
+    {
+        return $this->hasOne(Brand::className(), ['id' => 'device_brand_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCategory()
+    {
+        return $this->hasOne(Category::className(), ['id' => 'device_category_id']);
     }
 
     /**
