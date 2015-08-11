@@ -2,6 +2,8 @@
 
 namespace backend\modules\device\models;
 
+use backend\modules\brand\models\Brand;
+use backend\modules\category\models\Category;
 use backend\modules\content\models\Content;
 use backend\modules\product\models\Product;
 use Yii;
@@ -9,6 +11,8 @@ use Yii;
 /**
  * This is the model class for table "device_device".
  * @property integer $id
+ * @property integer $device_brand_id
+ * @property integer $device_category_id
  * @property integer $device_product_id
  * @property string $type
  * @property string $name
@@ -21,8 +25,11 @@ use Yii;
  * @property string $price
  * @property string $note
  * @property string $characters
- * @property Content $contents
+ * @property Brand $brand
+ * @property Category $categoryId
  * @property Product $product
+ * @property Content[] $contents
+ * @property Product[] $deviceProducts
  */
 class Device extends \backend\db\Model
 {
@@ -40,8 +47,8 @@ class Device extends \backend\db\Model
     public function rules()
     {
         return [
-            [['device_product_id', 'type'], 'required'],
-            [['device_product_id'], 'integer'],
+            [['device_brand_id', 'device_category_id', 'device_product_id'], 'integer'],
+            [['type'], 'required'],
             [['name', 'description', 'short_description', 'characters'], 'string'],
             [['weight', 'width', 'height', 'depth', 'price'], 'number'],
             [['type', 'note'], 'string', 'max' => 25]
@@ -55,7 +62,9 @@ class Device extends \backend\db\Model
     {
         return [
             'id' => 'ID',
-            'device_product_id' => 'Product ID',
+            'device_brand_id' => 'Device Brand ID',
+            'device_category_id' => 'Device Category ID',
+            'device_product_id' => 'Device Product Id',
             'type' => 'Type',
             'name' => 'Name',
             'description' => 'Description',
@@ -70,6 +79,23 @@ class Device extends \backend\db\Model
         ];
     }
 
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getBrand()
+    {
+        return $this->hasOne(Brand::className(), ['id' => 'device_brand_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCategoryId()
+    {
+        return $this->hasOne(Category::className(), ['id' => 'device_category_id']);
+    }
+
     /**
      * @return \yii\db\ActiveQuery
      */
@@ -78,8 +104,27 @@ class Device extends \backend\db\Model
         return $this->hasOne(Product::className(), ['id' => 'device_product_id']);
     }
 
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getProducts()
+    {
+        return $this->hasMany(Product::className(), ['id' => 'product_id'])->viaTable(
+            'device_product',
+            ['device_id' => 'id']
+        );
+//        return $this->hasOne(Product::className(), ['id' => 'device_product_id']);
+    }
+
     public function getContents()
     {
         return $this->hasMany(Content::className(), ['device_id' => 'id']);
+    }
+
+    public function defaultExpand()
+    {
+        return ['brand', 'categoryId', 'product'];
+
     }
 }

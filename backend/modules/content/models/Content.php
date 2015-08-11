@@ -3,6 +3,7 @@
 namespace backend\modules\content\models;
 
 use backend\modules\brand\models\Brand;
+use backend\modules\category\models\Category;
 use backend\modules\device\models\Device;
 use backend\modules\product\models\Product;
 use Yii;
@@ -17,13 +18,16 @@ use backend\modules\user\models\User;
  * @property string $updated_at
  * @property string $description
  * @property string $short_description
- * @property string $price
  * @property string $characters
+ * @property integer $published
+ * @property integer $enabled
  * @property string $name
- * @property string $product_id
- * @property User $owner
+ * @property string $price
  * @property Device $device
+ * @property Category $category
  * @property Product $product
+ * @property User $owner
+ * @property Brand $brand
  */
 class Content extends \backend\db\Model
 {
@@ -42,12 +46,10 @@ class Content extends \backend\db\Model
     {
         return [
             [['device_id', 'owner_id'], 'required'],
-            [['device_id', 'owner_id'], 'integer'],
+            [['device_id', 'owner_id', 'published', 'enabled'], 'integer'],
             [['created_at', 'updated_at'], 'safe'],
             [['description', 'short_description', 'characters'], 'string'],
-            [['price'], 'string', 'max' => 25],
-            [['name',], 'string', 'max' => 250]
-
+            [['name', 'price'], 'string', 'max' => 25]
         ];
     }
 
@@ -64,20 +66,13 @@ class Content extends \backend\db\Model
             'updated_at' => 'Updated At',
             'description' => 'Description',
             'short_description' => 'Short Description',
-            'price' => 'Price',
             'characters' => 'Characters',
-            'name' => 'Name'
+            'published' => 'Published',
+            'enabled' => 'Enabled',
+            'name' => 'Name',
+            'price' => 'Price',
         ];
     }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getOwner()
-    {
-        return $this->hasOne(User::className(), ['id' => 'owner_id']);
-    }
-
 
     /**
      * @return \yii\db\ActiveQuery
@@ -87,15 +82,14 @@ class Content extends \backend\db\Model
         return $this->hasOne(Device::className(), ['id' => 'device_id']);
     }
 
+
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getProductId()
+    public function getOwner()
     {
-        return $this->hasOne(Product::className(), ['id' => 'product_id'])->viaTable(
-            'device_device',
-            ['id' => 'device_id']
-        );
+        return $this->hasOne(User::className(), ['id' => 'owner_id']);
     }
+
 
 }
