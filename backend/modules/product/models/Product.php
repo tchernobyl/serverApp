@@ -66,6 +66,14 @@ class Product extends \backend\db\Model
     /**
      * @return \yii\db\ActiveQuery
      */
+    public function getDevices()
+    {
+        return $this->hasMany(Device::className(), ['device_product_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
     public function getBrands()
     {
         return $this->hasMany(Brand::className(), ['id' => 'brand_id'])->viaTable(
@@ -75,14 +83,14 @@ class Product extends \backend\db\Model
 
     }
 
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getDevices()
-    {
-        return $this->hasMany(Brand::className(), ['id' => 'device_id'])->viaTable(
-            'device_product',
-            ['product_id' => 'id']
-        );
-    }
+//    /**
+//     * @return \yii\db\ActiveQuery
+//     */
+//    public function getDevices()
+//    {
+//        return $this->hasMany(Brand::className(), ['id' => 'device_id'])->viaTable(
+//            'device_product',
+//            ['product_id' => 'id']
+//        );
+//    }
 }
