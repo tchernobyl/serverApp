@@ -97,4 +97,16 @@ class Brand extends \backend\db\Model
     {
         return $this->hasMany(Device::className(), ['device_brand_id' => 'id']);
     }
+
+    public function relatedManyToMany($object)
+    {
+        if ($object == "categories") {
+
+            return new Brandcategory();
+        } else {
+            return [];
+        }
+
+
+    }
 }
