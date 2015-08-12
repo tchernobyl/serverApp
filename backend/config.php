@@ -31,6 +31,7 @@ return [
                 'lt' => 'backend\rest\component\query\filters\LessThan',
                 'lte' => 'backend\rest\component\query\filters\LessThanOrEquals',
                 'like' => 'backend\rest\component\query\filters\Like',
+                'HasMany' => 'backend\rest\component\query\filters\HasMany',
                 'neq' => 'backend\rest\component\query\filters\NotEquals',
                 'notin' => 'backend\rest\component\query\filters\NotIn',
 //                'tags' => 'backend\modules\taggable\query\filters\Tags',

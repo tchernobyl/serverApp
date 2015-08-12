@@ -4,6 +4,7 @@ namespace backend\modules\brand\models;
 
 use backend\modules\category\models\Category;
 use Yii;
+use yii\data\ActiveDataProvider;
 
 /**
  * This is the model class for table "brand_category".
@@ -66,5 +67,17 @@ class Brandcategory extends \backend\db\Model
     public function getBrandId()
     {
         return $this->hasOne(Brand::className(), ['id' => 'brand_id']);
+    }
+
+    public function getIdsBrandsByCategory($categoryId)
+    {
+//        $this->findAll(array('category_id'=>$categoryId));
+        $query = $this->find()->where(['=', 'category_id', $categoryId]);
+        $provider = new ActiveDataProvider([
+            'query' => $query,
+            'key' => 'brand_id',
+        ]);
+
+        return $provider->getKeys();
     }
 }
