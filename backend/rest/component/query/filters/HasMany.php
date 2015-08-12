@@ -28,12 +28,13 @@ class HasMany extends FilterAbstract
         $glue = ArrayHelper::getValue($query, 'glue', 'and');
         $currentObject = new $activeDataProvider->query->modelClass;
         $object = $currentObject->relatedManyToMany($fieldName);
-        $keys = $object->getIdsBrandsByCategory($value);
+        $keys = $object->getIds($value, $fieldName);
+
 
         if ($glue == 'and') {
-            $activeDataProvider->query->andWhere(['in', 'id', $keys]);
+            $activeDataProvider->query->andFilterWhere(['in', 'id', $keys]);
         } else {
-            $activeDataProvider->query->orwhere(['in', 'id', $keys]);
+            $activeDataProvider->query->orFilterWhere(['in', 'id', $keys]);
 
         }
 

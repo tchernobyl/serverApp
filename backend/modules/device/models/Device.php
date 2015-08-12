@@ -127,4 +127,16 @@ class Device extends \backend\db\Model
         return ['brand', 'categoryId', 'product'];
 
     }
+
+    public function relatedManyToMany($object)
+    {
+        if ($object == "products") {
+
+            return new Deviceproduct();
+        } else {
+            return [];
+        }
+
+
+    }
 }

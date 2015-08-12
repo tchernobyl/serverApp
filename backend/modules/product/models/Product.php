@@ -3,6 +3,7 @@
 namespace backend\modules\product\models;
 
 use backend\modules\content\models\Content;
+use backend\modules\device\models\Deviceproduct;
 use Yii;
 use backend\modules\brand\models\Brand;
 use backend\modules\device\models\Device;
@@ -80,6 +81,18 @@ class Product extends \backend\db\Model
             'brand_product',
             ['product_id' => 'id']
         );
+
+    }
+
+    public function relatedManyToMany($object)
+    {
+        if ($object == "devices") {
+
+            return new Deviceproduct();
+        } else {
+            return [];
+        }
+
 
     }
 

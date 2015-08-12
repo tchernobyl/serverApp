@@ -69,15 +69,21 @@ class Brandcategory extends \backend\db\Model
         return $this->hasOne(Brand::className(), ['id' => 'brand_id']);
     }
 
-    public function getIdsBrandsByCategory($categoryId)
+    public function getIds($categoryId, $field)
     {
-//        $this->findAll(array('category_id'=>$categoryId));
-        $query = $this->find()->where(['=', 'category_id', $categoryId]);
-        $provider = new ActiveDataProvider([
-            'query' => $query,
-            'key' => 'brand_id',
-        ]);
+        if ($field == "categories") {
 
-        return $provider->getKeys();
+            //        $this->findAll(array('category_id'=>$categoryId));
+            $query = $this->find()->where(['=', 'category_id', $categoryId]);
+            $provider = new ActiveDataProvider([
+                'query' => $query,
+                'key' => 'brand_id',
+            ]);
+
+            return $provider->getKeys();
+        } else {
+            return [];
+        }
+
     }
 }
