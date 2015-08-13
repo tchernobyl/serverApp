@@ -89,6 +89,10 @@ class Product extends \backend\db\Model
         if ($object == "devices") {
 
             return new Deviceproduct();
+        }
+        if ($object == "brands") {
+
+            return new Brandproduct();
         } else {
             return [];
         }
