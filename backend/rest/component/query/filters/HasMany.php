@@ -23,6 +23,7 @@ class HasMany extends FilterAbstract
     {
 
 
+        //TODO correct error "x-pagination-total-count"
         $fieldName = Inflector::camel2id(ArrayHelper::getValue($query, 'field'), '_');
         $value = ArrayHelper::getValue($query, 'value', array());
         $glue = ArrayHelper::getValue($query, 'glue', 'and');
