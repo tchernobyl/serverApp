@@ -32,6 +32,7 @@ return [
                         'backend/brand/brand',
                         'backend/brand/Brandcategory',
                         'backend/product/product',
+                        'backend/field/field',
                         'backend/device/device',
                         'backend/content/content'
                     ]

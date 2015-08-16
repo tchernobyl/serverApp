@@ -2,11 +2,13 @@
 
 namespace backend\modules\product\models;
 
+use backend\behaviors\HasParamsBehavior;
 use backend\modules\content\models\Content;
 use backend\modules\device\models\Deviceproduct;
 use Yii;
 use backend\modules\brand\models\Brand;
 use backend\modules\device\models\Device;
+use backend\modules\field\models\Field;
 
 /**
  * This is the model class for table "product_product".
@@ -15,8 +17,10 @@ use backend\modules\device\models\Device;
  * @property string $short_description
  * @property string $description
  * @property string $params
+ * @property string $extra_fields
  * @property string $name
  * @property Content[] $contents
+ * @property Field[] $fields
  */
 class Product extends \backend\db\Model
 {
@@ -35,7 +39,7 @@ class Product extends \backend\db\Model
     {
         return [
             [['product', 'short_description', 'description', 'name'], 'required'],
-            [['short_description', 'description', 'params'], 'string'],
+            [['short_description', 'description', 'params', 'extra_fields'], 'string'],
             [['product', 'name'], 'string', 'max' => 25]
         ];
     }
@@ -51,6 +55,7 @@ class Product extends \backend\db\Model
             'short_description' => 'Short Description',
             'description' => 'Description',
             'params' => 'Params',
+            'extra_fields' => 'Extra Fields',
             'name' => 'Name',
         ];
     }
@@ -67,9 +72,31 @@ class Product extends \backend\db\Model
     /**
      * @return \yii\db\ActiveQuery
      */
+    public function getFields()
+    {
+
+        return $this->hasMany(Field::className(), ['product_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
     public function getDevices()
     {
         return $this->hasMany(Device::className(), ['device_product_id' => 'id']);
+    }
+
+    public function behaviors()
+    {
+        return array_merge(
+            parent::behaviors(),
+            [
+                'HasParamsBehavior' => [
+                    'class' => HasParamsBehavior::className(),
+                    'attribute' => 'extra_fields'
+                ],
+            ]
+        );
     }
 
     /**
@@ -83,6 +110,7 @@ class Product extends \backend\db\Model
         );
 
     }
+
 
     public function relatedManyToMany($object)
     {
@@ -100,6 +128,24 @@ class Product extends \backend\db\Model
 
     }
 
+    /**
+     * {@inheritdoc}
+     */
+    public function getExtraFields()
+    {
+
+        return $this->extra_fields;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setExtraFields(array $extra_fields)
+    {
+        $this->extra_fields = $extra_fields;
+
+        return $this;
+    }
 //    /**
 //     * @return \yii\db\ActiveQuery
 //     */
