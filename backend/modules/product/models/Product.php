@@ -111,23 +111,6 @@ class Product extends \backend\db\Model
 
     }
 
-
-    public function relatedManyToMany($object)
-    {
-        if ($object == "devices") {
-
-            return new Deviceproduct();
-        }
-        if ($object == "brands") {
-
-            return new Brandproduct();
-        } else {
-            return [];
-        }
-
-
-    }
-
     /**
      * {@inheritdoc}
      */
@@ -146,6 +129,24 @@ class Product extends \backend\db\Model
 
         return $this;
     }
+
+    public function relatedManyToMany($object)
+    {
+        if ($object == "devices") {
+
+            return new Deviceproduct();
+        }
+        if ($object == "brands") {
+
+            return new Brandproduct();
+        } else {
+            return [];
+        }
+
+
+    }
+
+
 //    /**
 //     * @return \yii\db\ActiveQuery
 //     */
