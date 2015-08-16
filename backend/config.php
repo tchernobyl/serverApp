@@ -16,6 +16,9 @@ return [
         'content' => [
             'class' => 'backend\modules\content\content',
         ],
+        'field' => [
+            'class' => 'backend\modules\field\field',
+        ],
 
     ],
     'globalComponents' => [
