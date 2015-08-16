@@ -1,1 +1,9 @@
-APEDevices/common/data/ 
+ ## data Base
+ sql file :APEDevices/common/data/APEDevices
+
+ ## configuration
+ configuration file APEDevices/common/main-local.php
+
+
+
+
