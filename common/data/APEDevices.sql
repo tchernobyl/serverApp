@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 16, 2015 at 07:31 PM
+-- Generation Time: Aug 17, 2015 at 06:50 PM
 -- Server version: 5.5.35
 -- PHP Version: 5.5.9-1+sury.org~precise+1
 
@@ -42,11 +42,11 @@ CREATE TABLE IF NOT EXISTS `brand_brand` (
 --
 
 INSERT INTO `brand_brand` (`id`, `type`, `updated_at`, `created_at`, `short_description`, `description`, `name`) VALUES
-(15, 'Samsung', '2015-08-16 16:31:37', '2015-08-10 16:12:55', 'Nullam tempor ultricies purus, et rhoncus ex varius varius. Etiam scelerisque ac eros ut faucibus. Vestibulum vitae ante quis ipsum tincidunt pretium. Suspendisse venenatis rutrum felis, ut hendrerit est porta quis. Aenean volutpat suscipit quam, in sollicitudin nibh imperdiet eget. Sed tincidunt, metus sit amet aliquet viverra, enim quam interdum nisl, vel gravida est nulla in magna. In fringilla ac metus pharetra lacinia. Morbi tempus metus magna, faucibus sodales nisi euismod non. Etiam in nulla venenatis,', 'Nullam tempor ultricies purus, et rhoncus ex varius varius. Etiam scelerisque ac eros ut faucibus. Vestibulum vitae ante quis ipsum tincidunt pretium. Suspendisse venenatis rutrum felis, ut hendrerit est porta quis. Aenean volutpat suscipit quam, in sollicitudin nibh imperdiet eget. Sed tincidunt, metus sit amet aliquet viverra, enim quam interdum nisl, vel gravida est nulla in magna. In fringilla ac metus pharetra lacinia. Morbi tempus metus magna, faucibus sodales nisi euismod non. Etiam in nulla venenatis,\nNullam tempor ultricies purus, et rhoncus ex varius varius. Etiam scelerisque ac eros ut faucibus. Vestibulum vitae ante quis ipsum tincidunt pretium. Suspendisse venenatis rutrum felis, ut hendrerit est porta quis. Aenean volutpat suscipit quam, in sollicitudin nibh imperdiet eget. Sed tincidunt, metus sit amet aliquet viverra, enim quam interdum nisl, vel gravida est nulla in magna. In fringilla ac metus pharetra lacinia. Morbi tempus metus magna, faucibus sodales nisi euismod non. Etiam in nulla venenatis,', 'Samsung'),
+(15, 'Samsung', '2015-08-17 11:49:34', '2015-08-10 16:12:55', 'Nullam tempor ultricies purus, et rhoncus ex varius varius. Etiam scelerisque ac eros ut faucibus. Vestibulum vitae ante quis ipsum tincidunt pretium. Suspendisse venenatis rutrum felis, ut hendrerit est porta quis. Aenean volutpat suscipit quam, in sollicitudin nibh imperdiet eget. Sed tincidunt, metus sit amet aliquet viverra, enim quam interdum nisl, vel gravida est nulla in magna. In fringilla ac metus pharetra lacinia. Morbi tempus metus magna, faucibus sodales nisi euismod non. Etiam in nulla venenatis,', 'Nullam tempor ultricies purus, et rhoncus ex varius varius. Etiam scelerisque ac eros ut faucibus. Vestibulum vitae ante quis ipsum tincidunt pretium. Suspendisse venenatis rutrum felis, ut hendrerit est porta quis. Aenean volutpat suscipit quam, in sollicitudin nibh imperdiet eget. Sed tincidunt, metus sit amet aliquet viverra, enim quam interdum nisl, vel gravida est nulla in magna. In fringilla ac metus pharetra lacinia. Morbi tempus metus magna, faucibus sodales nisi euismod non. Etiam in nulla venenatis,\nNullam tempor ultricies purus, et rhoncus ex varius varius. Etiam scelerisque ac eros ut faucibus. Vestibulum vitae ante quis ipsum tincidunt pretium. Suspendisse venenatis rutrum felis, ut hendrerit est porta quis. Aenean volutpat suscipit quam, in sollicitudin nibh imperdiet eget. Sed tincidunt, metus sit amet aliquet viverra, enim quam interdum nisl, vel gravida est nulla in magna. In fringilla ac metus pharetra lacinia. Morbi tempus metus magna, faucibus sodales nisi euismod non. Etiam in nulla venenatis,', 'Samsung'),
 (16, 'Sharp', '2015-08-16 16:31:38', '2015-08-10 16:33:51', 'Nam lacus justo, sodales a odio id, lacinia vulputate purus', 'Nam lacus justo, sodales a odio id, lacinia vulputate purus. Donec eu nibh non metus condimentum semper a eu nulla. Donec posuere purus et nulla ornare tempus. Sed tristique ligula ut nulla lacinia semper. Fusce ac ullamcorper nunc. Donec vitae ante a velit sollicitudin dapibus porta interdum leo. Praesent et interdum lacus. Duis fringilla tortor vitae tempus aliquet. Sed eget leo justo. In a turpis mauris. Suspendisse potenti. Nunc lobortis nisi eget ipsum vulputate, eget pellentesque dui tempor. Quisque id ullamcorper neque. Integer lacinia congue nisl, volutpat ultricies ex. Etiam mauris odio, facilisis nec ipsum quis, venenatis volutpat diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;', 'Sharp'),
-(24, 'nokia', '2015-08-16 16:08:01', '2015-08-11 11:52:25', 'nokia brand nokia brand', 'nokia brand nokia brand nokia brand nokia brand nokia brand nokia brand nokia brand nokia brand \nnokia brand nokia brand nokia brand nokia brand nokia brand nokia brand nokia brand nokia brand \nnokia brand nokia brand nokia brand nokia brand nokia brand nokia brand nokia brand nokia brand', 'Nokia'),
-(25, 'Dell', '2015-08-11 14:52:45', '2015-08-11 14:46:38', 'Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent placerat volutpat nisi id convallis. Pellentesque posuere libero vitae maximus aliquam. Quisque dapibus nibh vel ex lacinia lobortis. Integer tristique rhoncus lacus, quis viverra magna consequat sed. Nullam sit amet ex euismod, mollis metus ac, condimentum libero. Aenean faucibus eros nec urna molestie,', 'Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent placerat volutpat nisi id convallis. Pellentesque posuere libero vitae maximus aliquam. Quisque dapibus nibh vel ex lacinia lobortis. Integer tristique rhoncus lacus, quis viverra magna consequat sed. Nullam sit amet ex euismod, mollis metus ac, condimentum libero. Aenean faucibus eros nec urna molestie, sit amet pharetra nibh accumsan. Morbi id sem pellentesque, consequat elit a, porta est. Donec consequat, augue ac placerat commodo, odio risus consequat mi, ac interdum mi mi et libero. Nam at porta eros, eget tincidunt est. Nam sit amet mollis ipsum. Pellentesque leo odio, dignissim ac velit vel, varius malesuada nibh. Nunc fermentum libero id massa eleifend suscipit. Phasellus posuere euismod hendrerit. Integer iaculis euismod lacus eu tincidunt.\n\nAenean viverra mattis elit. Praesent vehicula, orci vulputate luctus congue, arcu erat mollis ligula, ut rhoncus arcu justo nec ipsum. Etiam eros orci, laoreet quis erat id, mattis accumsan lorem. Vivamus in mattis eros. Donec mi quam, elementum sit amet malesuada at, vulputate vel nulla. Nullam turpis erat, ultricies at arcu nec, commodo ultricies felis. Sed at ultrices arcu. Morbi quis porta ex. Aliquam facilisis nunc sodales eros mattis dignissim. Nulla tellus quam, condimentum a maximus ultrices, egestas eget massa. Maecenas facilisis risus ac maximus aliquam. Etiam vulputate, leo vel mollis convallis, eros nulla porttitor ante, in elementum dui urna eget quam.\n\nNullam tempor ultricies purus, et rhoncus ex varius varius. Etiam scelerisque ac eros ut faucibus. Vestibulum vitae ante quis ipsum tincidunt pretium. Suspendisse venenatis rutrum felis, ut hendrerit est porta quis. Aenean volutpat suscipit quam, in sollicitudin nibh imperdiet eget. Sed tincidunt, metus sit amet aliquet viverra, enim quam interdum nisl, vel gravida est nulla in magna. In fringilla ac metus pharetra lacinia. Morbi tempus metus magna, faucibus sodales nisi euismod non. Etiam in nulla venenatis, pretium augue vel, dictum dui. Nullam feugiat gravida nisi, sed viverra erat vulputate sed. Aenean ante lacus, condimentum ut dictum vitae, luctus ac orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi sit amet metus vitae sem aliquet vestibulum. Nulla pellentesque mauris eu porttitor luctus. Morbi id odio sit amet tortor euismod gravida sed eu diam. Fusce vitae dapibus tortor.\n\nAliquam sit amet sodales ante. Curabitur sed sollicitudin neque. Sed semper et est id sollicitudin. Suspendisse et eros nec tellus lobortis mollis sit amet eu ipsum. In a eleifend dui, et semper neque. Nulla facilisi. Pellentesque tempus tortor et aliquet mattis. Proin gravida tellus sit amet pretium venenatis. Morbi elementum nibh vel urna efficitur congue. Nulla sodales lectus ac placerat consectetur. Phasellus auctor dictum sapien id tincidunt. Nulla elementum rutrum finibus. Suspendisse hendrerit molestie mi, commodo vulputate quam.\n\nSed scelerisque eu tortor in finibus. Nam dictum posuere volutpat. Aliquam libero sem, maximus vitae lacinia ullamcorper, blandit quis metus. Praesent non odio iaculis, suscipit tortor vel, venenatis orci. Integer vel ligula pulvinar, hendrerit enim nec, ornare nunc. Ut finibus rutrum ligula nec sollicitudin. Vivamus purus purus, egestas sed sollicitudin a, tempus a magna. Cras rutrum commodo sagittis. Donec at facilisis orci. Vivamus rutrum vitae magna id ullamcorper. Suspendisse potenti. In hac habitasse platea dictumst. Proin interdum pretium massa quis lobortis. Proin eu sapien sed massa vehicula efficitur.', 'Dell'),
-(26, 'Sony', '2015-08-14 13:43:00', '2015-08-11 14:47:21', 'Vestibulum commodo enim id velit bibendum, ut feugiat justo pretium. Praesent pulvinar mattis molestie. Vivamus rutrum dignissim sapien, eu porta odio iaculis a. Nunc vitae mattis sapien. Proin magna odio, condimentum sit amet magna eu, volutpat gravida turpis. Pellentesque scelerisque diam a diam lacinia, ut accumsan erat suscipit. Quisque convallis accumsan faucibus.', 'Vestibulum commodo enim id velit bibendum, ut feugiat justo pretium. Praesent pulvinar mattis molestie. Vivamus rutrum dignissim sapien, eu porta odio iaculis a. Nunc vitae mattis sapien. Proin magna odio, condimentum sit amet magna eu, volutpat gravida turpis. Pellentesque scelerisque diam a diam lacinia, ut accumsan erat suscipit. Quisque convallis accumsan faucibus.\nVestibulum commodo enim id velit bibendum, ut feugiat justo pretium. Praesent pulvinar mattis molestie. Vivamus rutrum dignissim sapien, eu porta odio iaculis a. Nunc vitae mattis sapien. Proin magna odio, condimentum sit amet magna eu, volutpat gravida turpis. Pellentesque scelerisque diam a diam lacinia, ut accumsan erat suscipit. Quisque convallis accumsan faucibus.', 'Sony'),
+(24, 'nokia', '2015-08-17 11:49:34', '2015-08-11 11:52:25', 'nokia brand nokia brand', 'nokia brand nokia brand nokia brand nokia brand nokia brand nokia brand nokia brand nokia brand \nnokia brand nokia brand nokia brand nokia brand nokia brand nokia brand nokia brand nokia brand \nnokia brand nokia brand nokia brand nokia brand nokia brand nokia brand nokia brand nokia brand', 'Nokia'),
+(25, 'Dell', '2015-08-17 11:49:34', '2015-08-11 14:46:38', 'Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent placerat volutpat nisi id convallis. Pellentesque posuere libero vitae maximus aliquam. Quisque dapibus nibh vel ex lacinia lobortis. Integer tristique rhoncus lacus, quis viverra magna consequat sed. Nullam sit amet ex euismod, mollis metus ac, condimentum libero. Aenean faucibus eros nec urna molestie,', 'Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent placerat volutpat nisi id convallis. Pellentesque posuere libero vitae maximus aliquam. Quisque dapibus nibh vel ex lacinia lobortis. Integer tristique rhoncus lacus, quis viverra magna consequat sed. Nullam sit amet ex euismod, mollis metus ac, condimentum libero. Aenean faucibus eros nec urna molestie, sit amet pharetra nibh accumsan. Morbi id sem pellentesque, consequat elit a, porta est. Donec consequat, augue ac placerat commodo, odio risus consequat mi, ac interdum mi mi et libero. Nam at porta eros, eget tincidunt est. Nam sit amet mollis ipsum. Pellentesque leo odio, dignissim ac velit vel, varius malesuada nibh. Nunc fermentum libero id massa eleifend suscipit. Phasellus posuere euismod hendrerit. Integer iaculis euismod lacus eu tincidunt.\n\nAenean viverra mattis elit. Praesent vehicula, orci vulputate luctus congue, arcu erat mollis ligula, ut rhoncus arcu justo nec ipsum. Etiam eros orci, laoreet quis erat id, mattis accumsan lorem. Vivamus in mattis eros. Donec mi quam, elementum sit amet malesuada at, vulputate vel nulla. Nullam turpis erat, ultricies at arcu nec, commodo ultricies felis. Sed at ultrices arcu. Morbi quis porta ex. Aliquam facilisis nunc sodales eros mattis dignissim. Nulla tellus quam, condimentum a maximus ultrices, egestas eget massa. Maecenas facilisis risus ac maximus aliquam. Etiam vulputate, leo vel mollis convallis, eros nulla porttitor ante, in elementum dui urna eget quam.\n\nNullam tempor ultricies purus, et rhoncus ex varius varius. Etiam scelerisque ac eros ut faucibus. Vestibulum vitae ante quis ipsum tincidunt pretium. Suspendisse venenatis rutrum felis, ut hendrerit est porta quis. Aenean volutpat suscipit quam, in sollicitudin nibh imperdiet eget. Sed tincidunt, metus sit amet aliquet viverra, enim quam interdum nisl, vel gravida est nulla in magna. In fringilla ac metus pharetra lacinia. Morbi tempus metus magna, faucibus sodales nisi euismod non. Etiam in nulla venenatis, pretium augue vel, dictum dui. Nullam feugiat gravida nisi, sed viverra erat vulputate sed. Aenean ante lacus, condimentum ut dictum vitae, luctus ac orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi sit amet metus vitae sem aliquet vestibulum. Nulla pellentesque mauris eu porttitor luctus. Morbi id odio sit amet tortor euismod gravida sed eu diam. Fusce vitae dapibus tortor.\n\nAliquam sit amet sodales ante. Curabitur sed sollicitudin neque. Sed semper et est id sollicitudin. Suspendisse et eros nec tellus lobortis mollis sit amet eu ipsum. In a eleifend dui, et semper neque. Nulla facilisi. Pellentesque tempus tortor et aliquet mattis. Proin gravida tellus sit amet pretium venenatis. Morbi elementum nibh vel urna efficitur congue. Nulla sodales lectus ac placerat consectetur. Phasellus auctor dictum sapien id tincidunt. Nulla elementum rutrum finibus. Suspendisse hendrerit molestie mi, commodo vulputate quam.\n\nSed scelerisque eu tortor in finibus. Nam dictum posuere volutpat. Aliquam libero sem, maximus vitae lacinia ullamcorper, blandit quis metus. Praesent non odio iaculis, suscipit tortor vel, venenatis orci. Integer vel ligula pulvinar, hendrerit enim nec, ornare nunc. Ut finibus rutrum ligula nec sollicitudin. Vivamus purus purus, egestas sed sollicitudin a, tempus a magna. Cras rutrum commodo sagittis. Donec at facilisis orci. Vivamus rutrum vitae magna id ullamcorper. Suspendisse potenti. In hac habitasse platea dictumst. Proin interdum pretium massa quis lobortis. Proin eu sapien sed massa vehicula efficitur.', 'Dell'),
+(26, 'Sony', '2015-08-17 11:49:34', '2015-08-11 14:47:21', 'Vestibulum commodo enim id velit bibendum, ut feugiat justo pretium. Praesent pulvinar mattis molestie. Vivamus rutrum dignissim sapien, eu porta odio iaculis a. Nunc vitae mattis sapien. Proin magna odio, condimentum sit amet magna eu, volutpat gravida turpis. Pellentesque scelerisque diam a diam lacinia, ut accumsan erat suscipit. Quisque convallis accumsan faucibus.', 'Vestibulum commodo enim id velit bibendum, ut feugiat justo pretium. Praesent pulvinar mattis molestie. Vivamus rutrum dignissim sapien, eu porta odio iaculis a. Nunc vitae mattis sapien. Proin magna odio, condimentum sit amet magna eu, volutpat gravida turpis. Pellentesque scelerisque diam a diam lacinia, ut accumsan erat suscipit. Quisque convallis accumsan faucibus.\nVestibulum commodo enim id velit bibendum, ut feugiat justo pretium. Praesent pulvinar mattis molestie. Vivamus rutrum dignissim sapien, eu porta odio iaculis a. Nunc vitae mattis sapien. Proin magna odio, condimentum sit amet magna eu, volutpat gravida turpis. Pellentesque scelerisque diam a diam lacinia, ut accumsan erat suscipit. Quisque convallis accumsan faucibus.', 'Sony'),
 (27, 'HP', '2015-08-11 17:52:16', '2015-08-11 14:49:49', 'Duis orci ex, sollicitudin a velit eget, placerat tempor augue. Aenean at libero nec enim consequat fringilla elementum vel libero. Donec rhoncus mattis lectus id consequat. Maecenas sit amet ipsum vel quam gravida facilisis aliquam congue ipsum. Aenean aliquam consequat nunc ut pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce eu libero a enim semper scelerisque. Pellentesque aliquam magna id velit egestas vehicula. Vestibulum eu felis eu felis egestas luctus sit amet in justo. Vestibulum dignissim tellus', 'Duis orci ex, sollicitudin a velit eget, placerat tempor augue. Aenean at libero nec enim consequat fringilla elementum vel libero. Donec rhoncus mattis lectus id consequat. Maecenas sit amet ipsum vel quam gravida facilisis aliquam congue ipsum. Aenean aliquam consequat nunc ut pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce eu libero a enim semper scelerisque. Pellentesque aliquam magna id velit egestas vehicula. Vestibulum eu felis eu felis egestas luctus sit amet in justo. Vestibulum dignissim tellus\nDuis orci ex, sollicitudin a velit eget, placerat tempor augue. Aenean at libero nec enim consequat fringilla elementum vel libero. Donec rhoncus mattis lectus id consequat. Maecenas sit amet ipsum vel quam gravida facilisis aliquam congue ipsum. Aenean aliquam consequat nunc ut pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce eu libero a enim semper scelerisque. Pellentesque aliquam magna id velit egestas vehicula. Vestibulum eu felis eu felis egestas luctus sit amet in justo. Vestibulum dignissim tellus', 'HP'),
 (28, 'HTC', '2015-08-11 17:53:46', '2015-08-11 17:53:46', 'HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC', 'HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC HTC', 'HTC');
 
@@ -65,7 +65,7 @@ CREATE TABLE IF NOT EXISTS `brand_category` (
   PRIMARY KEY (`id`),
   KEY `brand_category` (`category_id`),
   KEY `category_brand` (`brand_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=146 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=148 ;
 
 --
 -- Dumping data for table `brand_category`
@@ -79,7 +79,9 @@ INSERT INTO `brand_category` (`id`, `brand_id`, `category_id`, `type`, `params`)
 (142, 15, 18, 'simple', NULL),
 (143, 27, 19, 'simple', NULL),
 (144, 28, 19, 'simple', NULL),
-(145, 24, 18, 'simple', NULL);
+(145, 24, 18, 'simple', NULL),
+(146, 26, 21, 'simple', NULL),
+(147, 25, 21, 'simple', NULL);
 
 -- --------------------------------------------------------
 
@@ -96,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `brand_product` (
   PRIMARY KEY (`id`),
   KEY `brand_product` (`product_id`),
   KEY `product_brand` (`brand_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=181 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=185 ;
 
 --
 -- Dumping data for table `brand_product`
@@ -107,10 +109,6 @@ INSERT INTO `brand_product` (`id`, `brand_id`, `product_id`, `type`, `params`) V
 (151, 26, 13, 'simple', NULL),
 (153, 25, 14, 'simple', NULL),
 (154, 27, 14, 'simple', NULL),
-(157, 15, 12, 'simple', NULL),
-(158, 24, 12, 'simple', NULL),
-(159, 25, 12, 'simple', NULL),
-(160, 26, 12, 'simple', NULL),
 (161, 16, 16, 'simple', NULL),
 (166, 26, 19, 'simple', NULL),
 (167, 24, 19, 'simple', NULL),
@@ -119,7 +117,11 @@ INSERT INTO `brand_product` (`id`, `brand_id`, `product_id`, `type`, `params`) V
 (170, 26, 15, 'simple', NULL),
 (171, 16, 17, 'simple', NULL),
 (179, 15, 18, 'simple', NULL),
-(180, 16, 18, 'simple', NULL);
+(180, 16, 18, 'simple', NULL),
+(181, 15, 12, 'simple', NULL),
+(182, 24, 12, 'simple', NULL),
+(183, 25, 12, 'simple', NULL),
+(184, 26, 12, 'simple', NULL);
 
 -- --------------------------------------------------------
 
@@ -140,7 +142,7 @@ CREATE TABLE IF NOT EXISTS `category_category` (
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `parent_id` (`parent_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
 
 --
 -- Dumping data for table `category_category`
@@ -150,7 +152,8 @@ INSERT INTO `category_category` (`id`, `parent_id`, `slug`, `name`, `image`, `sh
 (17, NULL, 'Electronic Devices', 'Electronic Devices', NULL, 'Electronic Devices', 'Electronic Devices Electronic Devices Electronic Devices Electronic Devices Electronic Devices', 1, '2015-08-10 16:05:08', '2015-08-11 15:01:53'),
 (18, 17, 'category E', 'category E', NULL, 'category E', 'category E category E category E category E category E category E category E category E category E category E category E category E', 1, '2015-08-10 16:12:41', '2015-08-14 14:08:56'),
 (19, 17, 'category F', 'category F', NULL, 'category Fcategory Fcategory Fcategory F', 'category Fcategory Fcategory Fcategory F', 1, '2015-08-11 17:52:01', '2015-08-11 17:53:46'),
-(20, 19, 'category D', 'category D', NULL, 'category D category D category D category D category D category D', 'category D category D category D category D category D category D category D category D category D category D category D category D category D category D', 1, '2015-08-13 18:01:07', '2015-08-13 18:01:07');
+(20, 19, 'category D', 'category D', NULL, 'category D category D category D category D category D category D', 'category D category D category D category D category D category D category D category D category D category D category D category D category D category D', 1, '2015-08-13 18:01:07', '2015-08-13 18:01:07'),
+(21, 20, 'Test Category', 'Test Category', NULL, 'Test Category Test Category Test Category', 'Test Category Test Category Test Category', 1, '2015-08-17 11:47:56', '2015-08-17 11:47:56');
 
 -- --------------------------------------------------------
 
@@ -180,7 +183,7 @@ CREATE TABLE IF NOT EXISTS `content_device` (
   KEY `category_id` (`category_id`),
   KEY `product_id` (`product_id`),
   KEY `brand_id` (`brand_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
 
 --
 -- Dumping data for table `content_device`
@@ -202,7 +205,8 @@ INSERT INTO `content_device` (`id`, `device_id`, `category_id`, `product_id`, `o
 (15, 11, NULL, NULL, 1, NULL, '2015-08-14 14:26:34', '2015-08-14 14:26:34', 'Nokia Lumia 830Nokia Lumia 830Nokia Lumia 830Nokia Lumia 830Nokia Lumia 830', 'Nokia Lumia 830 Nokia Lumia 830', NULL, 0, 0, 'Nokia Lumia 830', '900'),
 (16, 23, NULL, NULL, 1, NULL, '2015-08-14 18:16:11', '2015-08-14 18:16:11', 'KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B', 'KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B', NULL, 0, 0, 'KDL-42W800sony_B', '650'),
 (17, 6, NULL, NULL, 1, NULL, '2015-08-15 12:02:06', '2015-08-15 12:02:06', 'KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B', 'za4a 5z4aze45 a5z4eza6e 6az54ea a6z5e4a zaz65e4aze654 az6e54a 6az5e4', NULL, 0, 0, 'Content Test', '985'),
-(18, 8, NULL, NULL, 1, NULL, '2015-08-15 17:18:51', '2015-08-15 17:18:51', 's3 galaxy s3 galaxy s3 galaxy v', 's3 galaxy  s3 galaxy s3 galaxy s3 galaxy', NULL, 0, 0, 's3 galaxy', '350');
+(18, 8, NULL, NULL, 1, NULL, '2015-08-15 17:18:51', '2015-08-15 17:18:51', 's3 galaxy s3 galaxy s3 galaxy v', 's3 galaxy  s3 galaxy s3 galaxy s3 galaxy', NULL, 0, 0, 's3 galaxy', '350'),
+(19, 22, NULL, NULL, 1, NULL, '2015-08-17 12:12:52', '2015-08-17 12:12:52', 'dell vostro prodell vostro prodell vostro prodell vostro pro', 'dell vostro pro', NULL, 0, 0, 'dell vostro pro', '980');
 
 -- --------------------------------------------------------
 
@@ -256,7 +260,7 @@ INSERT INTO `device_device` (`id`, `device_brand_id`, `device_category_id`, `typ
 (19, 27, 19, 'pavilion', 'hp pavilion', 'hp pavilion hp pavilion hp pavilion hp pavilion hp pavilion hp pavilion', 'hp pavilion hp pavilion hp pavilion', 323.0000, 2330.0000, 32.0000, 125.0000, 120.0000, '0', NULL, '2015-08-12 17:34:23', '2015-08-12 17:34:23', 14, NULL),
 (20, 27, 18, '6032', 'hp 6032', 'hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032', 'hp 6032 hp 6032 hp 6032 hp 6032 hp 6032', 50.0000, 30.0000, 30.0000, 30.0000, 50.0000, '0', NULL, '2015-08-12 17:35:00', '2015-08-12 17:35:00', 14, NULL),
 (21, 25, 18, '5s', 'dell inspiron 5s', 'dell inspiron 5s dell inspiron 5s dell inspiron 5s dell inspiron 5s dell inspiron 5s dell inspiron 5s dell inspiron 5s dell inspiron 5s dell inspiron 5s dell inspiron 5s', 'dell inspiron 5s dell inspiron 5s dell inspiron 5s', 203.0000, 232.0000, 22.0000, 220.0000, 620.0000, '0', NULL, '2015-08-12 17:36:00', '2015-08-13 13:57:39', 14, NULL),
-(22, 25, 18, 'vostro', 'dell vostro pro', 'dell vostro pro dell vostro pro dell vostro pro dell vostro pro \ndell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro', 'dell vostro pro dell vostro pro dell vostro pro dell vostro pro', 233.0000, 232.0000, 222.0000, 22.0000, 532.0000, '0', NULL, '2015-08-12 17:37:37', '2015-08-13 13:55:36', 14, NULL),
+(22, 25, 18, 'vostro', 'dell vostro pro', 'dell vostro pro dell vostro pro dell vostro pro dell vostro pro \ndell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro', 'dell vostro pro dell vostro pro dell vostro pro dell vostro pro', 233.0000, 232.0000, 222.0000, 22.0000, 532.0000, '0', NULL, '2015-08-12 17:37:37', '2015-08-17 12:12:52', 14, NULL),
 (23, 26, 18, 'X950B', 'KDL-42W800sony_B', 'Model Features: 4K Ultra HD1, Motionflow™ XR 960, media up-scaled to 4K quality1, 2, wireless HD streaming with built-in Wi-Fi®5, X-tended Dynamic Range PRO with 3x brightness range3, TRILUMINOS™ display, HDMI support for next gen 4K players and services4', '84.6” (diag) X950B Flagship 4K Ultra HD TV', 2152.0000, 215.0000, 2123.0000, 2115.0000, 190.0000, '0', NULL, '2015-08-12 19:07:35', '2015-08-14 18:16:11', 13, NULL),
 (24, 26, 18, 'calc', 'Sony calculator', 'Sony calculator Sony calculator Sony calculator Sony calculator Sony calculator Sony calculator', 'Sony calculator Sony calculator', 22.0000, 23.0000, 25.0000, 62.0000, 230.0000, '0', NULL, '2015-08-13 14:00:35', '2015-08-13 14:00:35', 15, NULL),
 (25, 26, 18, 'Sony X Headphones', 'Sony_X', 'Sony X Headphones Sony X Headphones Sony X Headphones Sony X Headphones Sony X Headphones Sony X Headphones Sony X Headphones Sony X Headphones', 'Sony X Headphones Sony X Headphones', 23.0000, 223.0000, 32.0000, 32.0000, 299.0000, '0', NULL, '2015-08-14 17:36:11', '2015-08-14 17:37:43', 19, NULL),
@@ -326,6 +330,41 @@ INSERT INTO `field_field` (`id`, `name`, `field`, `type`, `description`, `short_
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `message`
+--
+
+CREATE TABLE IF NOT EXISTS `message` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sender_id` int(10) NOT NULL,
+  `receiver_id` int(10) NOT NULL,
+  `subject` text COLLATE utf8_unicode_ci,
+  `body` text COLLATE utf8_unicode_ci,
+  `draft` tinyint(4) NOT NULL,
+  `is_sent` tinyint(4) NOT NULL,
+  `is_read` tinyint(4) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  `deleted_at` datetime DEFAULT NULL,
+  `last_read_at` datetime DEFAULT NULL,
+  `type` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `sender_id` (`sender_id`),
+  KEY `receiver_id` (`receiver_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `message`
+--
+
+INSERT INTO `message` (`id`, `sender_id`, `receiver_id`, `subject`, `body`, `draft`, `is_sent`, `is_read`, `created_at`, `updated_at`, `deleted_at`, `last_read_at`, `type`) VALUES
+(4, 1, 3, 'test subject', ' body test message  body test message  body test message  body test message ', 0, 1, 0, '2015-08-16 00:00:00', '2015-08-16 00:00:00', '0000-00-00 00:00:00', '2015-08-17 00:00:00', '1'),
+(5, 3, 1, ' subject 2 test message2  ', ' body test message2  body test message 2 body test message  body test message ', 0, 1, 0, '2015-08-17 00:00:00', '2015-08-17 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '1'),
+(6, 1, 3, 'Le Lorem Ipsum .', 'Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l''imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n''a pas fait que survivre cinq siècles, mais s''est aussi adapté à la bureautique informatique, sans que son contenu n''en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.', 0, 1, 1, '2015-08-17 00:00:00', '2015-08-17 00:00:00', NULL, NULL, '1'),
+(7, 1, 2, 'subject 3', 'subject 3 body 3 subject 3 body 3 subject 3 body 3 subject 3 body 3 subject 3 body 3 subject 3 body 3 subject 3 body 3 subject 3 body 3 subject 3 body 3 ', 0, 1, 1, '2015-08-17 00:00:00', '2015-08-17 00:00:00', '2015-08-17 00:00:00', '2015-08-17 00:00:00', '2');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `migration`
 --
 
@@ -369,7 +408,7 @@ CREATE TABLE IF NOT EXISTS `product_product` (
 --
 
 INSERT INTO `product_product` (`id`, `product`, `short_description`, `description`, `params`, `name`, `created_at`, `updated_at`, `extra_fields`) VALUES
-(12, 'Phone ', 'Phone Phone ', 'Phone Phone Phone Phone Phone Phone Phone Phone ', NULL, 'Phone', '2015-08-11 00:00:00', '2015-08-11 15:05:03', NULL),
+(12, 'Phone ', 'Phone Phone ', 'Phone Phone Phone Phone Phone Phone Phone Phone ', NULL, 'Phone', '2015-08-11 00:00:00', '2015-08-17 11:49:34', 'a:1:{i:0;a:7:{s:2:"id";s:0:"";s:4:"name";s:6:"memory";s:5:"field";s:6:"memory";s:7:"content";s:2:"60";s:4:"type";s:4:"text";s:7:"enabled";s:0:"";s:6:"length";i:50;}}'),
 (13, 'TV', 'Proin non sagittis eros, id pharetra mauris. Vestibulum eu ante ut justo finibus feugiat vitae quis mi. Phasellus efficitur finibus nisl, ac laoreet velit volutpat non. Praesent et odio turpis. Duis vestibulum turpis lectus, in consequat turpis porttitor vitae. Phasellus sit amet elementum sem. Duis auctor justo nec lectus sodales auctor. Nunc eget sapien magna.', 'Proin non sagittis eros, id pharetra mauris. Vestibulum eu ante ut justo finibus feugiat vitae quis mi. Phasellus efficitur finibus nisl, ac laoreet velit volutpat non. Praesent et odio turpis. Duis vestibulum turpis lectus, in consequat turpis porttitor vitae. Phasellus sit amet elementum sem. Duis auctor justo nec lectus sodales auctor. Nunc eget sapien magna.\n\nProin non sagittis eros, id pharetra mauris. Vestibulum eu ante ut justo finibus feugiat vitae quis mi. Phasellus efficitur finibus nisl, ac laoreet velit volutpat non. Praesent et odio turpis. Duis vestibulum turpis lectus, in consequat turpis porttitor vitae. Phasellus sit amet elementum sem. Duis auctor justo nec lectus sodales auctor. Nunc eget sapien magna.', NULL, 'TV', '2015-08-11 00:00:00', '2015-08-11 15:05:56', NULL),
 (14, 'Computer', 'Nullam at tortor elit. In ut consequat risus. Nulla porttitor cursus ligula ac pulvinar. Proin a quam nibh. Donec gravida tortor in ligula tristique, efficitur dignissim mauris varius. Mauris eu odio urna. Vestibulum lacinia, enim sed faucibus semper, justo libero fermentum lorem, a lacinia purus lectus et lacus. Ut dictum ultrices nunc a maximus. Morbi id justo sit amet purus vestibulum imperdiet sed eget tortor. Pellentesque velit velit, consectetur vitae condimentum bibendum, sollicitudin non purus.', 'Nullam at tortor elit. In ut consequat risus. Nulla porttitor cursus ligula ac pulvinar. Proin a quam nibh. Donec gravida tortor in ligula tristique, efficitur dignissim mauris varius. Mauris eu odio urna. Vestibulum lacinia, enim sed faucibus semper, justo libero fermentum lorem, a lacinia purus lectus et lacus. Ut dictum ultrices nunc a maximus. Morbi id justo sit amet purus vestibulum imperdiet sed eget tortor. Pellentesque velit velit, consectetur vitae condimentum bibendum, sollicitudin non purus.\n\nNullam at tortor elit. In ut consequat risus. Nulla porttitor cursus ligula ac pulvinar. Proin a quam nibh. Donec gravida tortor in ligula tristique, efficitur dignissim mauris varius. Mauris eu odio urna. Vestibulum lacinia, enim sed faucibus semper, justo libero fermentum lorem, a lacinia purus lectus et lacus. Ut dictum ultrices nunc a maximus. Morbi id justo sit amet purus vestibulum imperdiet sed eget tortor. Pellentesque velit velit, consectetur vitae condimentum bibendum, sollicitudin non purus.', NULL, 'Computer', '2015-08-11 11:59:53', '2015-08-13 13:57:39', NULL),
 (15, 'calculator', 'quis maximus mauris ullamcorper. Sed feugiat, eros in pulvinar mollis, diam ligula dapibus ante, in mattis ipsum ipsum a lectus. Mauris viverra consequat eleifend.', 'quis maximus mauris ullamcorper. Sed feugiat, eros in pulvinar mollis, diam ligula dapibus ante, in mattis ipsum ipsum a lectus. Mauris viverra consequat eleifend.\n quis maximus mauris ullamcorper. Sed feugiat, eros in pulvinar mollis, diam ligula dapibus ante, in mattis ipsum ipsum a lectus. Mauris viverra consequat eleifend quis maximus mauris ullamcorper. Sed feugiat, eros in pulvinar mollis, diam ligula dapibus ante, in mattis ipsum ipsum a lectus. Mauris viverra consequat eleifend.', NULL, 'Calculator', '2015-08-11 14:51:33', '2015-08-14 13:42:10', NULL),
@@ -401,14 +440,16 @@ CREATE TABLE IF NOT EXISTS `user` (
   `activation_code` text COLLATE utf8_unicode_ci,
   `blocked` tinyint(4) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`, `activated_at`, `first_name`, `last_name`, `last_login`, `activation_code`, `blocked`) VALUES
-(1, 'tchernobyl', 'eyb8_MAxnjuSTO-RlJ50TRZ2c85JOfHZ', '$2y$13$RWdHh8cP6XeFnwc9Qb03C.hazu5dwqAAXd6vyO3fL69FBM8re90TC', NULL, 'ameur.hamdouni@gmail.com', 10, '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 'hamdouni', 'ameur', '2015-08-17 13:27:38', 'h8cP6XeFnwc9Qb03C.hazu5dwq', 0);
+(1, 'tchernobyl', 'eyb8_MAxnjuSTO-RlJ50TRZ2c85JOfHZ', '$2y$13$RWdHh8cP6XeFnwc9Qb03C.hazu5dwqAAXd6vyO3fL69FBM8re90TC', NULL, 'ameur.hamdouni@gmail.com', 10, '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 'hamdouni', 'ameur', '2015-08-17 13:27:38', 'h8cP6XeFnwc9Qb03C.hazu5dwq', 0),
+(2, 'pw2', 'eyb8_MAxnjuSTO-RlJ50TRZ2c85JOfHZ', '$2y$13$RWdHh8cP6XeFnwc9Qb03C.hazu5dwqAAXd6vyO3fL69FBM8re90TC', NULL, 'pw2@gmail.com', 10, '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 'pw2', 'tchar', '2015-08-17 13:27:38', 'h8cP6XeFnwc9Qb03C.hazu5dwq', 0),
+(3, 'Omar', 'eyb8_MAxnjuSTO-RlJ50TRZ2c85JOfHZ', '$2y$13$RWdHh8cP6XeFnwc9Qb03C.hazu5dwqAAXd6vyO3fL69FBM8re90TC', NULL, 'omar@gmail.com', 10, '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 'daly', 'omar', '2015-08-17 13:27:38', 'h8cP6XeFnwc9Qb03C.hazu5dwq', 0);
 
 --
 -- Constraints for dumped tables
@@ -464,6 +505,13 @@ ALTER TABLE `device_product`
 --
 ALTER TABLE `field_field`
   ADD CONSTRAINT `field_product_id` FOREIGN KEY (`product_id`) REFERENCES `product_product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `message`
+--
+ALTER TABLE `message`
+  ADD CONSTRAINT `receiver_id` FOREIGN KEY (`receiver_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `sender_id` FOREIGN KEY (`sender_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

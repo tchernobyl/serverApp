@@ -35,7 +35,8 @@ return [
                         'backend/field/field',
                         'backend/device/device',
                         'backend/content/content',
-                        'backend/user/user'
+                        'backend/user/user',
+                        'backend/message/message'
                     ]
                 ],
                 [

@@ -22,6 +22,9 @@ return [
         'user' => [
             'class' => 'backend\modules\user\user',
         ],
+        'message' => [
+            'class' => 'backend\modules\message\message',
+        ],
 
     ],
     'globalComponents' => [
