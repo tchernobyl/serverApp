@@ -1,7 +1,7 @@
 <?php
 /**
  * @version    HasStateMachineInterface.php 0.1
- * @package    app\modules\v1\SM
+ * @package    backend\SM
  * @subpackage
  * @category   Controller
  * @author     Hamza Chouaibi {@link http://portalsway.com} {@link hamza.chouaibi[at]gmail[dot]com}

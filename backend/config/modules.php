@@ -5,4 +5,5 @@ return [
         'class' => 'backend\Module',
         'basePath' => '@backend',
     ],
+
 ];
