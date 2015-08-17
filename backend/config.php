@@ -19,6 +19,9 @@ return [
         'field' => [
             'class' => 'backend\modules\field\field',
         ],
+        'user' => [
+            'class' => 'backend\modules\user\user',
+        ],
 
     ],
     'globalComponents' => [

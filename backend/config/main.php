@@ -34,7 +34,8 @@ return [
                         'backend/product/product',
                         'backend/field/field',
                         'backend/device/device',
-                        'backend/content/content'
+                        'backend/content/content',
+                        'backend/user/user'
                     ]
                 ],
                 [

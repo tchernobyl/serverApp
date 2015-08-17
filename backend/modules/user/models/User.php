@@ -14,11 +14,12 @@ use Yii;
  * @property string $password_reset_token
  * @property string $email
  * @property integer $status
- * @property integer $created_at
- * @property integer $updated_at
+ * @property string $created_at
+ * @property string $updated_at
+ * @property string $activated_at
  * @property Content[] $contentDevices
  */
-class User extends \yii\db\ActiveRecord
+class User extends \backend\db\Model
 {
     /**
      * @inheritdoc
@@ -34,10 +35,30 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['username', 'auth_key', 'password_hash', 'email', 'created_at', 'updated_at'], 'required'],
-            [['status', 'created_at', 'updated_at'], 'integer'],
+            [['username', 'email', 'first_name', 'last_name'], 'required'],
+            [['status', 'created_at', 'updated_at', 'activated_at', 'last_login'], 'integer'],
+            [['activated_at', 'created_at', 'updated_at', 'last_login'], 'safe'],
             [['username', 'password_hash', 'password_reset_token', 'email'], 'string', 'max' => 255],
-            [['auth_key'], 'string', 'max' => 32]
+            [['auth_key', 'first_name', 'last_name'], 'string', 'max' => 32]
+        ];
+    }
+
+    public function fields()
+    {
+        return [
+            'id' => 'id',
+            'email' => 'email',
+            'username' => 'username',
+            'status' => 'status',
+            'first_name' => 'first_name',
+            'last_name' => 'last_name',
+            'activation_code' => 'activation_code',
+            'activated_at' => 'activated_at',
+            'activated_at' => 'activated_at',
+            'created_at' => 'created_at',
+            'updated_at' => 'updated_at',
+            'last_login' => 'last_login',
+
         ];
     }
 

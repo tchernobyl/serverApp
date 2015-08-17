@@ -392,8 +392,14 @@ CREATE TABLE IF NOT EXISTS `user` (
   `password_reset_token` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `status` smallint(6) NOT NULL DEFAULT '10',
-  `created_at` int(11) NOT NULL,
-  `updated_at` int(11) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  `activated_at` datetime DEFAULT NULL,
+  `first_name` varchar(25) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `last_name` varchar(25) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `last_login` datetime DEFAULT NULL,
+  `activation_code` text COLLATE utf8_unicode_ci,
+  `blocked` tinyint(4) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
 
@@ -401,8 +407,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'ameur', 'eyb8_MAxnjuSTO-RlJ50TRZ2c85JOfHZ', '$2y$13$RWdHh8cP6XeFnwc9Qb03C.hazu5dwqAAXd6vyO3fL69FBM8re90TC', NULL, 'ameur.hamdouni@gmail.com', 10, 1437819194, 1437819194);
+INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`, `activated_at`, `first_name`, `last_name`, `last_login`, `activation_code`, `blocked`) VALUES
+(1, 'tchernobyl', 'eyb8_MAxnjuSTO-RlJ50TRZ2c85JOfHZ', '$2y$13$RWdHh8cP6XeFnwc9Qb03C.hazu5dwqAAXd6vyO3fL69FBM8re90TC', NULL, 'ameur.hamdouni@gmail.com', 10, '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 'hamdouni', 'ameur', '2015-08-17 13:27:38', 'h8cP6XeFnwc9Qb03C.hazu5dwq', 0);
 
 --
 -- Constraints for dumped tables
