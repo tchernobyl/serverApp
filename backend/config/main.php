@@ -49,6 +49,12 @@ return [
                         'GET formatted' => 'formattedCategories'
                     ]
                 ],
+                [
+                    'class' => 'yii\rest\UrlRule',
+                    'controller' => [
+                        'backend/file/file',
+                    ]
+                ],
             ],
 
         ],

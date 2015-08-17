@@ -1,7 +1,7 @@
 <?php
 /**
  * @version    SaveRelatedListener.php 0.1
- * @package    app\modules\v1\eventListener
+ * @package    backend\eventListener
  * @subpackage
  * @category   Controller
  * @author     Hamza Chouaibi {@link http://portalsway.com} {@link hamza.chouaibi[at]gmail[dot]com}

@@ -25,6 +25,9 @@ return [
         'message' => [
             'class' => 'backend\modules\message\message',
         ],
+        'file' => [
+            'class' => 'backend\modules\file\Module',
+        ],
 
     ],
     'globalComponents' => [
