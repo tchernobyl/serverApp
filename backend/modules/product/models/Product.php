@@ -5,6 +5,7 @@ namespace backend\modules\product\models;
 use backend\behaviors\HasParamsBehavior;
 use backend\modules\content\models\Content;
 use backend\modules\device\models\Deviceproduct;
+use backend\modules\file\models\File;
 use Yii;
 use backend\modules\brand\models\Brand;
 use backend\modules\device\models\Device;
@@ -146,7 +147,22 @@ class Product extends \backend\db\Model
 
     }
 
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getImages()
+    {
+        return $this->hasMany(File::className(), ['id' => 'image_id'])->viaTable(
+            'product_image',
+            ['product_id' => 'id']
+        );
+    }
 
+    public function defaultExpand()
+    {
+        return ['images'];
+
+    }
 //    /**
 //     * @return \yii\db\ActiveQuery
 //     */

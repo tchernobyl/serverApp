@@ -173,7 +173,7 @@ class Device extends \backend\db\Model
 
     public function defaultExpand()
     {
-        return ['brand', 'categoryId', 'product'];
+        return ['brand', 'categoryId', 'product', 'images'];
 
     }
 

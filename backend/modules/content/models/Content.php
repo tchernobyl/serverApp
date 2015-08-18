@@ -5,6 +5,7 @@ namespace backend\modules\content\models;
 use backend\modules\brand\models\Brand;
 use backend\modules\category\models\Category;
 use backend\modules\device\models\Device;
+use backend\modules\file\models\File;
 use backend\modules\product\models\Product;
 use Yii;
 use backend\modules\user\models\User;
@@ -91,5 +92,20 @@ class Content extends \backend\db\Model
         return $this->hasOne(User::className(), ['id' => 'owner_id']);
     }
 
+    public function defaultExpand()
+    {
+        return ['images'];
 
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getImages()
+    {
+        return $this->hasMany(File::className(), ['id' => 'image_id'])->viaTable(
+            'content_image',
+            ['content_id' => 'id']
+        );
+    }
 }

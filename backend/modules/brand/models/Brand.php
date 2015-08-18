@@ -5,6 +5,7 @@ namespace backend\modules\brand\models;
 use backend\modules\category\models\Category;
 use backend\modules\content\models\Content;
 use backend\modules\device\models\Device;
+use backend\modules\file\models\File;
 use backend\modules\product\models\Product;
 use Yii;
 
@@ -108,5 +109,22 @@ class Brand extends \backend\db\Model
         }
 
 
+    }
+
+    public function defaultExpand()
+    {
+        return ['images'];
+
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getImages()
+    {
+        return $this->hasMany(File::className(), ['id' => 'image_id'])->viaTable(
+            'brand_image',
+            ['brand_id' => 'id']
+        );
     }
 }
