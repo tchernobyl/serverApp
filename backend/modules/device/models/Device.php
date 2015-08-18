@@ -6,6 +6,7 @@ use backend\behaviors\HasParamsBehavior;
 use backend\modules\brand\models\Brand;
 use backend\modules\category\models\Category;
 use backend\modules\content\models\Content;
+use backend\modules\file\models\File;
 use backend\modules\product\models\Product;
 use Yii;
 
@@ -156,6 +157,19 @@ class Device extends \backend\db\Model
 
         return $this;
     }
+
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getImages()
+    {
+        return $this->hasMany(File::className(), ['id' => 'image_id'])->viaTable(
+            'device_image',
+            ['device_id' => 'id']
+        );
+    }
+
 
     public function defaultExpand()
     {
