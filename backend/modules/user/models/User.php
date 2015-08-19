@@ -3,6 +3,8 @@
 namespace backend\modules\user\models;
 
 use backend\modules\content\models\Content;
+
+use backend\modules\file\models\File;
 use Yii;
 
 /**
@@ -36,10 +38,14 @@ class User extends \backend\db\Model
     {
         return [
             [['username', 'email', 'first_name', 'last_name'], 'required'],
-            [['status', 'created_at', 'updated_at', 'activated_at', 'last_login'], 'integer'],
+            [['status'], 'integer'],
             [['activated_at', 'created_at', 'updated_at', 'last_login'], 'safe'],
             [['username', 'password_hash', 'password_reset_token', 'email'], 'string', 'max' => 255],
-            [['auth_key', 'first_name', 'last_name'], 'string', 'max' => 32]
+            [
+                ['auth_key', 'first_name', 'last_name', 'created_at', 'updated_at', 'activated_at', 'last_login'],
+                'string',
+                'max' => 32
+            ]
         ];
     }
 
@@ -53,7 +59,6 @@ class User extends \backend\db\Model
             'first_name' => 'first_name',
             'last_name' => 'last_name',
             'activation_code' => 'activation_code',
-            'activated_at' => 'activated_at',
             'activated_at' => 'activated_at',
             'created_at' => 'created_at',
             'updated_at' => 'updated_at',
@@ -86,5 +91,16 @@ class User extends \backend\db\Model
     public function getContentDevices()
     {
         return $this->hasMany(Content::className(), ['owner_id' => 'id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getImages()
+    {
+        return $this->hasMany(File::className(), ['id' => 'image_id'])->viaTable(
+            'user_image',
+            ['user_id' => 'id']
+        );
     }
 }

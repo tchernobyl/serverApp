@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 18, 2015 at 08:02 PM
+-- Generation Time: Aug 19, 2015 at 05:45 PM
 -- Server version: 5.5.35
 -- PHP Version: 5.5.9-1+sury.org~precise+1
 
@@ -106,7 +106,6 @@ CREATE TABLE IF NOT EXISTS `brand_image` (
 
 INSERT INTO `brand_image` (`id`, `brand_id`, `image_id`, `created_at`, `updated_at`) VALUES
 (546, 28, 327, NULL, NULL),
-(551, 15, 321, NULL, NULL),
 (552, 16, 326, NULL, NULL),
 (553, 24, 322, NULL, NULL),
 (554, 26, 325, NULL, NULL),
@@ -238,7 +237,7 @@ CREATE TABLE IF NOT EXISTS `content_device` (
   KEY `category_id` (`category_id`),
   KEY `product_id` (`product_id`),
   KEY `brand_id` (`brand_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
 
 --
 -- Dumping data for table `content_device`
@@ -252,17 +251,18 @@ INSERT INTO `content_device` (`id`, `device_id`, `category_id`, `product_id`, `o
 (7, 12, NULL, NULL, 1, NULL, '2015-08-11 16:04:30', '2015-08-11 16:04:30', 'sharp calculator  in good condition, properly adjusted, and well maintained.', 'sharp calculator  in good condition, properly adjusted, and well maintained.', NULL, 0, 0, 'sharp calculator', '750'),
 (8, 9, NULL, NULL, 1, NULL, '2015-08-12 14:53:03', '2015-08-12 14:53:03', 'sNokiad kdazae zaek sNokiad kdazae zaek sNokiad kdazae zaek sNokiad kdazae zaek sNokiad kdazae zaek sNokiad kdazae zaek sNokiad kdazae zaek', 'sNokiad kdazae zaek sNokiad kdazae zaek sNokiad kdazae zaek', NULL, 0, 0, 'aze azeaze', '626'),
 (9, 17, NULL, NULL, 1, NULL, '2015-08-12 15:49:03', '2015-08-12 15:49:03', 'smart watch sony smart watch sony smart watch sony smart watch sony smart watch sony smart watch sony smart watch sony smart watch sony smart watch sony smart watch sony smart watch sony smart watch sony smart watch sony', 'smart watch sony', NULL, 0, 0, 'smart watch sony', 'smart watch sony'),
-(10, 22, NULL, NULL, 1, NULL, '2015-08-13 13:55:36', '2015-08-13 13:55:36', 'Vostro Pc  Vostro Pc 5230 Vostro Pc  Vostro Pc 5230 Vostro Pc  Vostro Pc 5230 Vostro Pc  Vostro Pc 5230 Vostro Pc  Vostro Pc 5230 Vostro Pc  Vostro Pc 5230', 'a good opportunity in good condition.', NULL, 0, 0, 'Vostro Pc', '532'),
+(10, 22, NULL, NULL, 1, NULL, '2015-08-13 13:55:36', '2015-08-19 13:56:19', 'Vostro Pc  Vostro Pc 5230 Vostro Pc  Vostro Pc 5230 Vostro Pc  Vostro Pc 5230 Vostro Pc  Vostro Pc 5230 Vostro Pc  Vostro Pc 5230 Vostro Pc  Vostro Pc 5230', 'a good opportunity in good condition.', NULL, 0, 0, 'Vostro Pc', '532'),
 (11, 10, NULL, NULL, 1, NULL, '2015-08-13 18:22:34', '2015-08-13 18:22:34', 'Lumia phone Lumia phone Lumia phone', 'Lumia phone  Lumia phone Lumia phone Lumia phone', NULL, 0, 0, 'Lumia phone', '856'),
 (12, 13, NULL, NULL, 1, NULL, '2015-08-13 18:40:25', '2015-08-13 18:40:25', 'YUJI - TL18S8313Se42S5 YUJI - TL18S8313Se42S5 YUJI - TL18S8313Se42S5 YUJI - TL18S8313Se42S5 YUJI - TL18S8313Se42S5 YUJI - TL18S8313Se42S5 YUJI - TL18S8313Se42S5 YUJI - TL18S8313Se42S5', 'YUJI - TL18S8313Se42S5 YUJI - TL18S8313Se42S5 YUJI - TL18S8313Se42S5', NULL, 0, 0, 'sdfsdf sdfsdf', '8788'),
 (13, 13, NULL, NULL, 1, NULL, '2015-08-13 19:44:14', '2015-08-13 19:44:14', 'aze azeae aze aze aez', 'azeaze', NULL, 0, 0, 'azeza', 'aze'),
 (14, 15, NULL, NULL, 1, NULL, '2015-08-14 14:21:03', '2015-08-14 14:21:03', 'MGL 2003 MGL 2003 MGL 2003 MGL 2003 \nMGL 2003 MGL 2003 MGL 2003', 'MGL 2003', NULL, 0, 0, '362', '256'),
 (15, 11, NULL, NULL, 1, NULL, '2015-08-14 14:26:34', '2015-08-14 14:26:34', 'Nokia Lumia 830Nokia Lumia 830Nokia Lumia 830Nokia Lumia 830Nokia Lumia 830', 'Nokia Lumia 830 Nokia Lumia 830', NULL, 0, 0, 'Nokia Lumia 830', '900'),
 (16, 23, NULL, NULL, 1, NULL, '2015-08-14 18:16:11', '2015-08-14 18:16:11', 'KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B', 'KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B', NULL, 0, 0, 'KDL-42W800sony_B', '650'),
-(17, 6, NULL, NULL, 1, NULL, '2015-08-15 12:02:06', '2015-08-15 12:02:06', 'KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B', 'za4a 5z4aze45 a5z4eza6e 6az54ea a6z5e4a zaz65e4aze654 az6e54a 6az5e4', NULL, 0, 0, 'Content Test', '985'),
+(17, 6, NULL, NULL, 1, NULL, '2015-08-15 12:02:06', '2015-08-19 16:30:11', 'KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B KD L- 4 2W800sony _ B', 'za4a 5z4aze45 a5z4eza6e 6az54ea a6z5e4a zaz65e4aze654 az6e54a 6az5e4', NULL, 0, 0, 'Content Test', '985'),
 (18, 8, NULL, NULL, 1, NULL, '2015-08-15 17:18:51', '2015-08-15 17:18:51', 's3 galaxy s3 galaxy s3 galaxy v', 's3 galaxy  s3 galaxy s3 galaxy s3 galaxy', NULL, 0, 0, 's3 galaxy', '350'),
 (19, 22, NULL, NULL, 1, NULL, '2015-08-17 12:12:52', '2015-08-17 12:12:52', 'dell vostro prodell vostro prodell vostro prodell vostro pro', 'dell vostro pro', NULL, 0, 0, 'dell vostro pro', '980'),
-(20, 22, NULL, NULL, 1, NULL, '2015-08-18 18:43:17', '2015-08-18 18:43:17', 'new Del Vostro machine  new Del Vostro machine  new Del Vostro machine  new Del Vostro machine  new Del Vostro machine', 'new Del Vostro machine  new Del Vostro machine  new Del Vostro machine  new Del Vostro machine', NULL, 0, 0, 'new Del Vostro machine', '650');
+(20, 22, NULL, NULL, 1, NULL, '2015-08-18 18:43:17', '2015-08-18 18:43:17', 'new Del Vostro machine  new Del Vostro machine  new Del Vostro machine  new Del Vostro machine  new Del Vostro machine', 'new Del Vostro machine  new Del Vostro machine  new Del Vostro machine  new Del Vostro machine', NULL, 0, 0, 'new Del Vostro machine', '650'),
+(21, 7, NULL, NULL, 1, NULL, '2015-08-19 14:02:41', '2015-08-19 14:02:41', '321321', '321', NULL, 0, 0, '213', '321');
 
 -- --------------------------------------------------------
 
@@ -279,7 +279,21 @@ CREATE TABLE IF NOT EXISTS `content_image` (
   PRIMARY KEY (`id`),
   KEY `content_image_content` (`content_id`),
   KEY `content_image_image` (`image_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=524 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=532 ;
+
+--
+-- Dumping data for table `content_image`
+--
+
+INSERT INTO `content_image` (`id`, `content_id`, `image_id`, `created_at`, `updated_at`) VALUES
+(524, 10, 295, NULL, NULL),
+(525, 10, 297, NULL, NULL),
+(526, 10, 298, NULL, NULL),
+(527, 10, 343, NULL, NULL),
+(528, 21, 346, NULL, NULL),
+(529, 21, 347, NULL, NULL),
+(530, 21, 348, NULL, NULL),
+(531, 17, 306, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -317,8 +331,8 @@ CREATE TABLE IF NOT EXISTS `device_device` (
 --
 
 INSERT INTO `device_device` (`id`, `device_brand_id`, `device_category_id`, `type`, `name`, `description`, `short_description`, `weight`, `width`, `height`, `depth`, `price`, `note`, `characters`, `created_at`, `updated_at`, `device_product_id`, `extra_fields`) VALUES
-(6, 15, 18, 'smart S600', 'Galaxy S6 edge', 'Reimagined Design Inside and Out\nInnovative Dual-Edge Screen\n5.1" Quad HD Super AMOLED® display\n16MP rear-facing camera', 'Samsung Galaxy S6 edge, 32GB†, (T-Mobile), Gold Platinum', 65652.0000, 3232.0000, 323.0000, 998.0000, 965.0000, '0', NULL, '2015-08-02 00:00:00', '2015-08-18 12:04:53', 12, NULL),
-(7, 15, 18, 'Samsung Galaxy Note Edge', 'Samsung Galaxy Note Edge', 'Innovative Smart Edge Screen\n5.6-inch Quad HD Super AMOLED® display\nEnhanced S Pen™ with more precision and functions\n16MP rear camera with Optical Image Stabilization', 'Samsung Galaxy Note Edge (Verizon), Charcoal Black', 232.0000, 325.0000, 223.0000, 23.0000, 32566.0000, '0', NULL, '2015-08-11 12:23:11', '2015-08-11 15:05:56', 12, NULL),
+(6, 15, 18, 'smart S600', 'Galaxy S6 edge', 'Reimagined Design Inside and Out\nInnovative Dual-Edge Screen\n5.1" Quad HD Super AMOLED® display\n16MP rear-facing camera', 'Samsung Galaxy S6 edge, 32GB†, (T-Mobile), Gold Platinum', 65652.0000, 3232.0000, 323.0000, 998.0000, 965.0000, '0', NULL, '2015-08-02 00:00:00', '2015-08-19 16:30:11', 12, NULL),
+(7, 15, 18, 'Samsung Galaxy Note Edge', 'Samsung Galaxy Note Edge', 'Innovative Smart Edge Screen\n5.6-inch Quad HD Super AMOLED® display\nEnhanced S Pen™ with more precision and functions\n16MP rear camera with Optical Image Stabilization', 'Samsung Galaxy Note Edge (Verizon), Charcoal Black', 232.0000, 325.0000, 223.0000, 23.0000, 32566.0000, '0', NULL, '2015-08-11 12:23:11', '2015-08-19 14:02:40', 12, NULL),
 (8, 15, 17, 'Galaxy S III', 'Galaxy S III', 'Sharing photos, music and video isn''t just better or easier–it''s almost instant\nNew ways to interact and simplify your life with your phone\nThe power you need, and the style you want', 'Samsung Galaxy S III, (Virgin Mobile), Marble White', 505.0000, 50.0000, 53.0000, 30.0000, 50.0000, '0', NULL, '2015-08-11 12:56:05', '2015-08-16 16:37:49', 12, 'a:2:{i:0;a:8:{s:2:"id";s:0:"";s:4:"name";s:7:"field 1";s:5:"field";s:6:"field1";s:7:"content";s:4:"9856";s:4:"type";s:4:"text";s:7:"enabled";s:0:"";s:6:"length";i:34;s:11:"description";s:10:"12 field 1";}i:1;a:8:{s:2:"id";s:0:"";s:4:"name";s:7:"field 2";s:5:"field";s:6:"field2";s:7:"content";s:4:"8895";s:4:"type";s:4:"text";s:7:"enabled";s:0:"";s:6:"length";i:150;s:11:"description";s:7:"320 323";}}'),
 (9, 24, 18, 'Nokia 105', 'Nokia 105', 'LAUNCH	Announced	2015, June\nStatus	Available. Released 2015, June\nBODY	Dimensions	108.5 x 45.5 x 14.1 mm (4.27 x 1.79 x 0.56 in)\nWeight	69.6 g (2.47 oz)\nSIM	Dual SIM (Mini-SIM, dual stand-by)\n 	- Flashlight\nDISPLAY	Type	TFT, 65K colors\nSize	1.4 inches (~12.8% screen-to-body ratio)\nResolution	128 x 128 pixels (~129 ppi pixel density)\nMEMORY	Card slot	No\nPhonebook	2000 contacts\nCall records	Yes\nInternal	4 MB RAM\nCAMERA	 	No', 'BATTERY	 	Li-Ion 800 mAh battery\nStand-by	Up to 600 h\nTalk time	Up to 15 h\nMISC	Colors	Black, Cyan, White', 556.0000, 230.0000, 230.0000, 223.0000, 98.0000, '0', NULL, '2015-08-11 15:09:34', '2015-08-12 14:53:03', 12, NULL),
 (10, 24, 18, 'Nokia Lumia 735', 'Nokia Lumia 735', 'NETWORK	Technology	\nGSM / HSPA / LTE\nLAUNCH	Announced	2014, September\nStatus	Available. Released 2014, September\nBODY	Dimensions	134.7 x 68.5 x 8.9 mm (5.30 x 2.70 x 0.35 in)\nWeight	134 g (4.73 oz)\nSIM	Nano-SIM\nDISPLAY	Type	OLED capacitive touchscreen, 16M colors\nSize	4.7 inches (~66.0% screen-to-body ratio)\nResolution	720 x 1280 pixels (~312 ppi pixel density)\nMultitouch	Yes\nProtection	Corning Gorilla Glass 3\n 	- ClearBlack display\nPLATFORM	OS	Microsoft Windows Phone 8.1, planned upgrade to Windows 10\nChipset	Qualcomm Snapdragon 400\nCPU	Quad-core 1.2 GHz Cortex-A7\nGPU	Adreno 305\nMEMORY	Card slot	microSD, up to 128 GB\nInternal	8 GB, 1 GB RAM\nCAMERA	Primary	6.7 MP (6.1 MP effective), 2848 x 2144 pixels, Carl Zeiss optics, autofocus, LED flash, check quality\nFeatures	1/3.4'''' sensor size, geo-tagging, face detection, panorama\nVideo	1080p@30fps, stereo sound rec., check quality\nSecondary	5 MP, 1080p\nSOUND	Alert types	Vibration; MP3, WAV ringtones\nLoudspeaker	Yes\n3.5mm jack	Yes\nCOMMS	WLAN	Wi-Fi 802.11 b/g/n, DLNA, hotspot\nBluetooth	v4.0, A2DP, LE/ apt-X after WP8 Denim update\nGPS	Yes, with A-GPS, GLONASS, Beidou\nNFC	Yes\nRadio	FM radio\nUSB	microUSB v2.0\nFEATURES	Sensors	Accelerometer, gyro, proximity, compass, sensor core\nMessaging	SMS (threaded view), MMS, Email, Push Email, IM\nBrowser	HTML5\nJava	No\n 	- Wireless Charging (Qi-enabled)\n- Active noise cancellation with dedicated mic\n- MP3/WAV/eAAC+/WMA player\n- MP4/H.264/WMV player\n- OneDrive (15 GB cloud storage)\n- Document viewer\n- Video/photo editor\nBATTERY	 	Li-Ion 2200 mAh battery (BV-T5A)\nStand-by	Up to 600 h\nTalk time	Up to 22 h (2G) / Up to 17 h (3G)\nMusic play	Up to 60 h\nMISC	Colors	Orange, green, white, black\nSAR US	 1.38 W/kg (head)     0.78 W/kg (body)    \nSAR EU	 0.80 W/kg (head)     0.48 W/kg (body)    \nPrice group	5/10\nTESTS	Performance	Basemark OS II: 435\nCamera	Photo / Video\nBattery life	\nEndurance rating 59h', 'TESTS	Performance	Basemark OS II: 435\nSAR EU	 0.80 W/kg (head)     0.48 W/kg (body)', 656.0000, 32.0000, 232.0000, 323.0000, 985.0000, '0', NULL, '2015-08-11 15:10:27', '2015-08-13 18:22:34', 12, NULL),
@@ -333,7 +347,7 @@ INSERT INTO `device_device` (`id`, `device_brand_id`, `device_category_id`, `typ
 (19, 27, 19, 'pavilion', 'hp pavilion', 'hp pavilion hp pavilion hp pavilion hp pavilion hp pavilion hp pavilion', 'hp pavilion hp pavilion hp pavilion', 323.0000, 2330.0000, 32.0000, 125.0000, 120.0000, '0', NULL, '2015-08-12 17:34:23', '2015-08-12 17:34:23', 14, NULL),
 (20, 27, 18, '6032', 'hp 6032', 'hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032 hp 6032', 'hp 6032 hp 6032 hp 6032 hp 6032 hp 6032', 50.0000, 30.0000, 30.0000, 30.0000, 50.0000, '0', NULL, '2015-08-12 17:35:00', '2015-08-12 17:35:00', 14, NULL),
 (21, 25, 18, '5s', 'dell inspiron 5s', 'dell inspiron 5s dell inspiron 5s dell inspiron 5s dell inspiron 5s dell inspiron 5s dell inspiron 5s dell inspiron 5s dell inspiron 5s dell inspiron 5s dell inspiron 5s', 'dell inspiron 5s dell inspiron 5s dell inspiron 5s', 203.0000, 232.0000, 22.0000, 220.0000, 620.0000, '0', NULL, '2015-08-12 17:36:00', '2015-08-13 13:57:39', 14, NULL),
-(22, 25, 18, 'vostro', 'dell vostro pro', 'dell vostro pro dell vostro pro dell vostro pro dell vostro pro \ndell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro', 'dell vostro pro dell vostro pro dell vostro pro dell vostro pro', 233.0000, 232.0000, 222.0000, 22.0000, 532.0000, '0', NULL, '2015-08-12 17:37:37', '2015-08-18 18:45:19', 14, 'a:1:{i:0;a:8:{s:2:"id";s:0:"";s:4:"name";s:3:"955";s:5:"field";s:3:"232";s:7:"content";s:3:"996";s:4:"type";s:3:"int";s:7:"enabled";s:0:"";s:6:"length";i:3;s:11:"description";s:11:"66666662.\n.";}}'),
+(22, 25, 18, 'vostro', 'dell vostro pro', 'dell vostro pro dell vostro pro dell vostro pro dell vostro pro \ndell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro dell vostro pro', 'dell vostro pro dell vostro pro dell vostro pro dell vostro pro', 233.0000, 232.0000, 222.0000, 22.0000, 532.0000, '0', NULL, '2015-08-12 17:37:37', '2015-08-19 13:56:19', 14, 'a:1:{i:0;a:8:{s:2:"id";s:0:"";s:4:"name";s:3:"955";s:5:"field";s:3:"232";s:7:"content";s:3:"996";s:4:"type";s:3:"int";s:7:"enabled";s:0:"";s:6:"length";i:3;s:11:"description";s:11:"66666662.\n.";}}'),
 (23, 26, 18, 'X950B', 'KDL-42W800sony_B', 'Model Features: 4K Ultra HD1, Motionflow™ XR 960, media up-scaled to 4K quality1, 2, wireless HD streaming with built-in Wi-Fi®5, X-tended Dynamic Range PRO with 3x brightness range3, TRILUMINOS™ display, HDMI support for next gen 4K players and services4', '84.6” (diag) X950B Flagship 4K Ultra HD TV', 2152.0000, 215.0000, 2123.0000, 2115.0000, 190.0000, '0', NULL, '2015-08-12 19:07:35', '2015-08-14 18:16:11', 13, NULL),
 (24, 26, 18, 'calc', 'Sony calculator', 'Sony calculator Sony calculator Sony calculator Sony calculator Sony calculator Sony calculator', 'Sony calculator Sony calculator', 22.0000, 23.0000, 25.0000, 62.0000, 230.0000, '0', NULL, '2015-08-13 14:00:35', '2015-08-13 14:00:35', 15, NULL),
 (25, 26, 18, 'Sony X Headphones', 'Sony_X', 'Sony X Headphones Sony X Headphones Sony X Headphones Sony X Headphones Sony X Headphones Sony X Headphones Sony X Headphones Sony X Headphones', 'Sony X Headphones Sony X Headphones', 23.0000, 223.0000, 32.0000, 32.0000, 299.0000, '0', NULL, '2015-08-14 17:36:11', '2015-08-14 17:37:43', 19, NULL),
@@ -369,9 +383,6 @@ CREATE TABLE IF NOT EXISTS `device_image` (
 --
 
 INSERT INTO `device_image` (`id`, `device_id`, `image_id`, `created_at`, `updated_at`) VALUES
-(470, 6, 296, NULL, NULL),
-(471, 6, 297, NULL, NULL),
-(472, 6, 298, NULL, NULL),
 (518, 17, 297, NULL, NULL),
 (519, 32, 294, NULL, NULL),
 (520, 32, 314, NULL, NULL),
@@ -454,7 +465,7 @@ CREATE TABLE IF NOT EXISTS `file` (
   `created_at` datetime DEFAULT NULL,
   `updated_at` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=343 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=349 ;
 
 --
 -- Dumping data for table `file`
@@ -730,11 +741,11 @@ INSERT INTO `file` (`id`, `path`, `name`, `system_name`, `folder`, `description`
 (291, '/home/pw2/AngularProject/goLive/api_dev/web/media/products/images/525811_19_b.jpg', NULL, '525811_19_b', 'products/images', NULL, NULL, 'jpg', '2015-07-22 13:40:36', '2015-07-22 13:41:14'),
 (292, '/home/pw2/AngularProject/goLive/api_dev/web/media/products/images/525811_20_b.jpg', NULL, '525811_20_b', 'products/images', NULL, NULL, 'jpg', '2015-07-22 13:40:37', '2015-07-22 13:41:15'),
 (293, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/10405540_718683618218040_1223847394225479132_n.png', NULL, '10405540_718683618218040_1223847394225479132_n', 'products/images', NULL, NULL, 'png', '2015-08-18 11:50:20', '2015-08-18 11:50:20'),
-(294, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_12_b.jpg', NULL, '525811_12_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 11:59:14', '2015-08-18 18:57:14'),
-(295, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_20_b.jpg', NULL, '525811_20_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 11:59:14', '2015-08-18 11:59:14'),
+(294, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_12_b.jpg', NULL, '525811_12_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 11:59:14', '2015-08-19 13:35:30'),
+(295, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_20_b.jpg', NULL, '525811_20_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 11:59:14', '2015-08-19 13:56:19'),
 (296, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_17_b.jpg', NULL, '525811_17_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:04:07', '2015-08-18 13:00:34'),
-(297, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_18_b.jpg', NULL, '525811_18_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:04:07', '2015-08-18 12:55:40'),
-(298, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_19_b.jpg', NULL, '525811_19_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:04:07', '2015-08-18 18:57:14'),
+(297, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_18_b.jpg', NULL, '525811_18_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:04:07', '2015-08-19 13:56:19'),
+(298, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_19_b.jpg', NULL, '525811_19_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:04:07', '2015-08-19 13:56:19'),
 (299, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_34_b.jpg', NULL, '525811_34_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:11:14', '2015-08-18 12:55:14'),
 (300, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_35_b.jpg', NULL, '525811_35_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:11:14', '2015-08-18 12:55:14'),
 (301, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/534038_1_b.jpg', NULL, '534038_1_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:11:14', '2015-08-18 12:55:14'),
@@ -742,16 +753,16 @@ INSERT INTO `file` (`id`, `path`, `name`, `system_name`, `folder`, `description`
 (303, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/534038_27_b.jpg', NULL, '534038_27_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:11:49', '2015-08-18 12:55:14'),
 (304, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/534038_28_b.jpg', NULL, '534038_28_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:11:50', '2015-08-18 12:55:14'),
 (305, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/534038_29_b.jpg', NULL, '534038_29_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:11:50', '2015-08-18 12:55:14'),
-(306, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_13_b.jpg', NULL, '525811_13_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:52:10', '2015-08-18 18:57:14'),
+(306, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_13_b.jpg', NULL, '525811_13_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:52:10', '2015-08-19 16:30:11'),
 (307, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/534038_35_b.jpg', NULL, '534038_35_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:53:56', '2015-08-18 12:55:15'),
 (308, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/914101_8_b.jpg', NULL, '914101_8_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:53:56', '2015-08-18 12:55:15'),
 (309, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/914101_20_b.jpg', NULL, '914101_20_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:53:56', '2015-08-18 12:55:15'),
 (310, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/6140160_19_b.jpg', NULL, '6140160_19_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:54:20', '2015-08-18 12:55:15'),
 (311, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/1670623_15_b.jpg', NULL, '1670623_15_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 12:56:03', '2015-08-18 12:56:03'),
 (312, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_15_b.jpg', NULL, '525811_15_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 13:00:33', '2015-08-18 18:57:14'),
-(313, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_16_b.jpg', NULL, '525811_16_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 13:00:34', '2015-08-18 13:00:34'),
+(313, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_16_b.jpg', NULL, '525811_16_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 13:00:34', '2015-08-19 13:15:35'),
 (314, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_10_b.jpg', NULL, '525811_10_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 13:05:26', '2015-08-18 13:05:31'),
-(315, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_11_b.jpg', NULL, '525811_11_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 13:05:26', '2015-08-18 13:05:31'),
+(315, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_11_b.jpg', NULL, '525811_11_b', 'products/images', NULL, NULL, 'jpg', '2015-08-18 13:05:26', '2015-08-19 13:15:35'),
 (316, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/Phone.png', NULL, 'Phone', 'products/images', NULL, NULL, 'png', '2015-08-18 14:34:37', '2015-08-18 18:33:24'),
 (317, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/headset.png', NULL, 'headset', 'products/images', NULL, NULL, 'png', '2015-08-18 15:36:25', '2015-08-18 18:34:26'),
 (318, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/tv.png', NULL, 'tv', 'products/images', NULL, NULL, 'png', '2015-08-18 15:37:05', '2015-08-18 18:34:47'),
@@ -778,7 +789,13 @@ INSERT INTO `file` (`id`, `path`, `name`, `system_name`, `folder`, `description`
 (339, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/Environment.png', NULL, 'Environment', 'products/images', NULL, NULL, 'png', '2015-08-18 18:30:46', '2015-08-18 18:30:48'),
 (340, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/watch.png', NULL, 'watch', 'products/images', NULL, NULL, 'png', '2015-08-18 18:33:38', '2015-08-18 18:33:41'),
 (341, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/Calculator.png', NULL, 'Calculator', 'products/images', NULL, NULL, 'png', '2015-08-18 18:34:07', '2015-08-18 18:34:11'),
-(342, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/spot.png', NULL, 'spot', 'products/images', NULL, NULL, 'png', '2015-08-18 18:34:58', '2015-08-18 18:35:01');
+(342, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/spot.png', NULL, 'spot', 'products/images', NULL, NULL, 'png', '2015-08-18 18:34:58', '2015-08-18 18:35:01'),
+(343, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/525811_22_b.jpg', NULL, '525811_22_b', 'products/images', NULL, NULL, 'jpg', '2015-08-19 13:17:48', '2015-08-19 13:56:19'),
+(344, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/534038_10_b.jpg', NULL, '534038_10_b', 'products/images', NULL, NULL, 'jpg', '2015-08-19 14:01:57', '2015-08-19 14:01:57'),
+(345, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/534038_11_b.jpg', NULL, '534038_11_b', 'products/images', NULL, NULL, 'jpg', '2015-08-19 14:01:57', '2015-08-19 14:01:57'),
+(346, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/534038_12_b.jpg', NULL, '534038_12_b', 'products/images', NULL, NULL, 'jpg', '2015-08-19 14:01:57', '2015-08-19 14:02:41'),
+(347, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/534038_13_b.jpg', NULL, '534038_13_b', 'products/images', NULL, NULL, 'jpg', '2015-08-19 14:02:38', '2015-08-19 14:02:41'),
+(348, '/home/pw2/PortalsWay/APEDevices/backend/web/media/products/images/534038_14_b.jpg', NULL, '534038_14_b', 'products/images', NULL, NULL, 'jpg', '2015-08-19 14:02:38', '2015-08-19 14:02:41');
 
 -- --------------------------------------------------------
 
@@ -859,7 +876,6 @@ CREATE TABLE IF NOT EXISTS `product_image` (
 --
 
 INSERT INTO `product_image` (`id`, `product_id`, `image_id`, `created_at`, `updated_at`) VALUES
-(528, 12, 316, NULL, NULL),
 (529, 18, 340, NULL, NULL),
 (531, 15, 341, NULL, NULL),
 (532, 19, 317, NULL, NULL),
@@ -948,7 +964,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `created_at`, `updated_at`, `activated_at`, `first_name`, `last_name`, `last_login`, `activation_code`, `blocked`) VALUES
-(1, 'tchernobyl', 'eyb8_MAxnjuSTO-RlJ50TRZ2c85JOfHZ', '$2y$13$RWdHh8cP6XeFnwc9Qb03C.hazu5dwqAAXd6vyO3fL69FBM8re90TC', NULL, 'ameur.hamdouni@gmail.com', 10, '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 'hamdouni', 'ameur', '2015-08-17 13:27:38', 'h8cP6XeFnwc9Qb03C.hazu5dwq', 0),
+(1, 'tchernobyl', 'eyb8_MAxnjuSTO-RlJ50TRZ2c85JOfHZ', '$2y$13$RWdHh8cP6XeFnwc9Qb03C.hazu5dwqAAXd6vyO3fL69FBM8re90TC', NULL, 'ameur.hamdouni@gmail.com', 10, '0000-00-00 00:00:00', '2015-08-19 13:35:30', NULL, 'hamdouni', 'ameur', '2015-08-17 13:27:38', 'h8cP6XeFnwc9Qb03C.hazu5dwq', 0),
 (2, 'pw2', 'eyb8_MAxnjuSTO-RlJ50TRZ2c85JOfHZ', '$2y$13$RWdHh8cP6XeFnwc9Qb03C.hazu5dwqAAXd6vyO3fL69FBM8re90TC', NULL, 'pw2@gmail.com', 10, '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 'pw2', 'tchar', '2015-08-17 13:27:38', 'h8cP6XeFnwc9Qb03C.hazu5dwq', 0),
 (3, 'Omar', 'eyb8_MAxnjuSTO-RlJ50TRZ2c85JOfHZ', '$2y$13$RWdHh8cP6XeFnwc9Qb03C.hazu5dwqAAXd6vyO3fL69FBM8re90TC', NULL, 'omar@gmail.com', 10, '0000-00-00 00:00:00', '0000-00-00 00:00:00', NULL, 'daly', 'omar', '2015-08-17 13:27:38', 'h8cP6XeFnwc9Qb03C.hazu5dwq', 0);
 
@@ -967,7 +983,17 @@ CREATE TABLE IF NOT EXISTS `user_image` (
   PRIMARY KEY (`id`),
   KEY `user_image_user` (`user_id`),
   KEY `user_image_image` (`image_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=523 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=530 ;
+
+--
+-- Dumping data for table `user_image`
+--
+
+INSERT INTO `user_image` (`id`, `user_id`, `image_id`, `created_at`, `updated_at`) VALUES
+(526, 1, 295, NULL, NULL),
+(527, 1, 298, NULL, NULL),
+(528, 1, 343, NULL, NULL),
+(529, 1, 294, NULL, NULL);
 
 --
 -- Constraints for dumped tables
