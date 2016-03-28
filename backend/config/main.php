@@ -22,7 +22,7 @@ return [
     'components' => [
         'urlManager' => [
             'enablePrettyUrl' => true,
-            'enableStrictParsing' => false,
+            'enableStrictParsing' => true,
             'showScriptName' => false,
             'rules' => [
                 [
@@ -36,7 +36,8 @@ return [
                         'backend/device/device',
                         'backend/content/content',
                         'backend/user/user',
-                        'backend/message/message'
+                        'backend/message/message',
+                        'backend/payment/payment'
                     ]
                 ],
                 [

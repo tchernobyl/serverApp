@@ -28,7 +28,9 @@ return [
         'file' => [
             'class' => 'backend\modules\file\Module',
         ],
-
+        'payment' => [
+            'class' => 'backend\modules\payment\payment',
+        ],
     ],
     'globalComponents' => [
         'filterRegistry' => [
