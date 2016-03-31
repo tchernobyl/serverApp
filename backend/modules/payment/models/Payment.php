@@ -2,18 +2,19 @@
 
 namespace backend\modules\payment\models;
 
+use backend\modules\content\models\Content;
 use Yii;
 
 /**
  * This is the model class for table "payment_payment".
  *
  * @property integer $id
- * @property integer $id_content
+ * @property Content $id_content
  * @property string $date_start
  * @property string $date_end
- * @property integer $price
+ * @property string $price
  */
-class Payment extends \yii\db\ActiveRecord
+class Payment extends \backend\db\Model
 {
     /**
      * @inheritdoc

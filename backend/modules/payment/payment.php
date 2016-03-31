@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\modules;
+namespace backend\modules\payment;
 
 class payment extends \yii\base\Module
 {
