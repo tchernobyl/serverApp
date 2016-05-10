@@ -32,3 +32,4 @@ phpunit.phar
 
 backend/web
 backend/runtime
+.access.log
