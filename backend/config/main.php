@@ -23,9 +23,9 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=APEDevices',
+            'dsn' => 'mysql:host=db;dbname=APEDevices',
             'username' => 'root',
-            'password' => 'maryam',
+            'password' => 'devpass',
             'charset' => 'utf8',
         ],
         'urlManager' => [
