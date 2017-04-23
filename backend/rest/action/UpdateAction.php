@@ -26,9 +26,6 @@ class UpdateAction extends \yii\rest\UpdateAction
         /* @var $model Model */
         $model = $this->findModel($id);
 
-        if ($this->checkAccess) {
-            call_user_func($this->checkAccess, $this->id, $model);
-        }
 
 
         $model->on('afterUpdate', array('backend\eventListener\SaveRelatedListener', 'saveRelated'));

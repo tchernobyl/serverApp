@@ -1,4 +1,8 @@
 <?php
+$params = array_merge(
+    require(__DIR__ . '/../../backend/config/params.php'),
+    require(__DIR__ . '/../../backend/config/params-local.php')
+);
 return [
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
@@ -7,9 +11,9 @@ return [
         ],
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=db;dbname=APEDevices',
-            'username' => 'root',
-            'password' => 'devpass',
+            'dsn' => $params['dsn'],
+            'username' => $params['username'],
+            'password' => $params['password'],
             'charset' => 'utf8',
         ],
         'mailer' => [

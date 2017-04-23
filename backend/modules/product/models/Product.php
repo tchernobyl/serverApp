@@ -3,13 +3,8 @@
 namespace backend\modules\product\models;
 
 use backend\behaviors\HasParamsBehavior;
-use backend\modules\content\models\Content;
-use backend\modules\device\models\Deviceproduct;
-use backend\modules\file\models\File;
 use Yii;
 use backend\modules\brand\models\Brand;
-use backend\modules\device\models\Device;
-use backend\modules\field\models\Field;
 
 /**
  * This is the model class for table "product_product".
@@ -20,8 +15,7 @@ use backend\modules\field\models\Field;
  * @property string $params
  * @property string $extra_fields
  * @property string $name
- * @property Content[] $contents
- * @property Field[] $fields
+
  */
 class Product extends \backend\db\Model
 {
@@ -62,30 +56,8 @@ class Product extends \backend\db\Model
     }
 
 
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getContents()
-    {
-        return $this->hasMany(Content::className(), ['product_id' => 'id']);
-    }
 
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getFields()
-    {
 
-        return $this->hasMany(Field::className(), ['product_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getDevices()
-    {
-        return $this->hasMany(Device::className(), ['device_product_id' => 'id']);
-    }
 
     public function behaviors()
     {
@@ -112,14 +84,7 @@ class Product extends \backend\db\Model
 
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getExtraFields()
-    {
 
-        return $this->extra_fields;
-    }
 
     /**
      * {@inheritdoc}
@@ -131,46 +96,13 @@ class Product extends \backend\db\Model
         return $this;
     }
 
-    public function relatedManyToMany($object)
-    {
-        if ($object == "devices") {
-
-            return new Deviceproduct();
-        }
-        if ($object == "brands") {
-
-            return new Brandproduct();
-        } else {
-            return [];
-        }
 
 
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getImages()
-    {
-        return $this->hasMany(File::className(), ['id' => 'image_id'])->viaTable(
-            'product_image',
-            ['product_id' => 'id']
-        );
-    }
 
     public function defaultExpand()
     {
         return ['images'];
 
     }
-//    /**
-//     * @return \yii\db\ActiveQuery
-//     */
-//    public function getDevices()
-//    {
-//        return $this->hasMany(Brand::className(), ['id' => 'device_id'])->viaTable(
-//            'device_product',
-//            ['product_id' => 'id']
-//        );
-//    }
+
 }
