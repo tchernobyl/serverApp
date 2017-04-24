@@ -4,7 +4,6 @@ namespace backend\modules\category\models;
 
 use backend\modules\brand\models\Brand;
 use backend\modules\brand\models\Brandcategory;
-use backend\modules\file\models\File;
 use Yii;
 
 /**
@@ -137,14 +136,5 @@ class Category extends \backend\db\Model
 
     }
 
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getImages()
-    {
-        return $this->hasMany(File::className(), ['id' => 'image_id'])->viaTable(
-            'category_image',
-            ['category_id' => 'id']
-        );
-    }
+
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\APEDevices\components\controllers;
+namespace backend\MDW\components\controllers;
 
 
 use backend\rest\Controller;

@@ -1,11 +1,10 @@
 <?php
 
 $params = array_merge(
-    require(__DIR__ . '/../../common/config/params.php'),
-    require(__DIR__ . '/../../common/config/params-local.php'),
     require(__DIR__ . '/params.php'),
     require(__DIR__ . '/params-local.php')
 );
+
 
 $module = require(__DIR__ . '/modules.php');
 return [
@@ -23,9 +22,9 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=db;dbname=APEDevices',
-            'username' => 'root',
-            'password' => 'devpass',
+            'dsn' => $params['dsn'],
+            'username' => $params['username'],
+            'password' => $params['password'],
             'charset' => 'utf8',
         ],
         'urlManager' => [
@@ -39,15 +38,20 @@ return [
                     'controller' => [
                         'backend/category/category',
                         'backend/brand/brand',
+                        'backend/user/user',
                         'backend/brand/Brandcategory',
                         'backend/product/product',
-                        'backend/field/field',
-                        'backend/device/device',
-                        'backend/content/content',
-                        'backend/user/user',
-                        'backend/message/message',
-                        'backend/payment/payment',
-                        'backend/shipping/shipping'
+
+                    ]
+                ],
+                [
+                    'class' => 'yii\rest\UrlRule',
+                    'controller' => [
+                        'backend/customer/customer',
+                    ],
+                    'extraPatterns' => [
+
+                        'POST signup' => 'signup'
                     ]
                 ],
                 [
@@ -70,7 +74,7 @@ return [
 
         ],
         'user' => [
-            'identityClass' => 'common\models\User',
+            'identityClass' => 'backend\modules\user\models\User',
             'enableAutoLogin' => true,
         ],
         'log' => [

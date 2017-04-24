@@ -4,36 +4,15 @@ return [
         'category' => [
             'class' => 'backend\modules\category\category',
         ],
-        'device' => [
-            'class' => 'backend\modules\device\device',
-        ],
-        'brand' => [
-            'class' => 'backend\modules\brand\brand',
-        ],
+
         'product' => [
             'class' => 'backend\modules\product\product',
         ],
-        'content' => [
-            'class' => 'backend\modules\content\content',
-        ],
-        'field' => [
-            'class' => 'backend\modules\field\field',
-        ],
-        'user' => [
-            'class' => 'backend\modules\user\user',
-        ],
-        'message' => [
-            'class' => 'backend\modules\message\message',
-        ],
-        'file' => [
-            'class' => 'backend\modules\file\Module',
-        ],
-        'payment' => [
-            'class' => 'backend\modules\payment\payment',
-        ],
-        'shipping' => [
-            'class' => 'backend\modules\shipping\shipping',
-        ],
+
+        'brand' => [
+            'class' => 'backend\modules\brand\brand',
+        ]
+
     ],
     'globalComponents' => [
         'filterRegistry' => [
