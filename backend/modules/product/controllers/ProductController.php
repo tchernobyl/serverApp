@@ -20,7 +20,7 @@ class ProductController extends ControllerAPED
             [
                 'authenticator' => [
                     'class' => CompositeAuth::className(),
-                    'only' => ['create', 'update'],
+                    'only' => ['delete'],
                     'authMethods' => [
                         ['class' => HttpBearerAuth::className()],
                         [
