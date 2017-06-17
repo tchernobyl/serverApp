@@ -30,6 +30,6 @@ phpunit.phar
 /phpunit.xml
 
 
-backend/web
+
 backend/runtime
 .access.log
