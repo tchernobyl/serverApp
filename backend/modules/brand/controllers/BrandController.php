@@ -19,7 +19,7 @@ class BrandController extends ControllerAPED
             [
                 'authenticator' => [
                     'class' => CompositeAuth::className(),
-                    'only' => ['create', 'update'],
+                    'only' => ['patch'],
                     'authMethods' => [
                         ['class' => HttpBearerAuth::className()],
                         [
